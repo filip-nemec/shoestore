@@ -4,8 +4,8 @@
   top: 0;
   right: 0;
   left: 0;
-  background-color: #fff;
-  border-bottom: 1px solid black;
+  background-color: $secondary-color;
+  border-bottom: 1px solid $main-color;
   text-transform: uppercase;
 }
 
@@ -21,7 +21,7 @@ header {
 }
 
 label.open-left-sidebar-button {
-  background-color: white;
+  background-color: $secondary-color;
 }
 
 ul,
@@ -36,7 +36,7 @@ a.logo {
 }
 
 a {
-  color: black;
+  color: $main-color;
   text-decoration: none;
 }
 
@@ -49,11 +49,11 @@ a {
     padding: 0.5em 0.5em;
     margin-right: 0.5em;
 
-    border: 1px solid #ffffff;
+    border: 1px solid $secondary-color;
     border-radius: 4px;
 
     &:hover {
-      border: 1px solid #000000;
+      border: 1px solid $main-color;
       border-radius: 4px;
     }
   }
@@ -73,7 +73,7 @@ a {
     padding: 0.25em 0.25em;
     margin-left: 0.5em;
 
-    border: 1px solid #ffffff;
+    border: 1px solid $secondary-color;
     border-radius: 4px;
 
     a:hover {
@@ -113,22 +113,22 @@ a {
     width: 70%;
     height: 100%;
 
-    background-color: white;
-    border-right: 1px solid black;
+    background-color: $secondary-color;
+    border-right: 1px solid $main-color;
     //box-shadow: +5px 0px 5px rgba(0, 0, 0, 0.2);
     transition: 0.3s ease-out;
 
     .primary-menu-header {
-      color: black;
-      background-color: white;
+      color: $main-color;
+      background-color: $secondary-color;
 
       &:hover {
-        color: white;
-        background-color: black;
+        color: $secondary-color;
+        background-color: $main-color;
 
         svg {
-          fill: white;
-          border-right: 1 px solid black;
+          fill: $secondary-color;
+          border-right: 1 px solid $main-color;
         }
       }
     }
@@ -154,19 +154,21 @@ a {
       display: block;
       position: absolute;
       margin: 0.9em;
-      fill: #757575;
+      fill: $search-bar-color;
     }
 
     #left-sidebar-search {
       display: block;
       width: 100%;
-      padding: 1em 1.2em 1em 3.2em;
-      background-color: white;
+      padding: 1.1em 1.2em 1em 3.3em;
+      color: $search-bar-color;
+      background-color: $secondary-color;
 
       font-family: "open-sans-medium";
-      font-size: 0.875rem; // 14px
+      font-size: 0.875rem;
       text-transform: uppercase;
       border-bottom: 1px solid black;
+      border-radius: 0px;
 
       &:focus {
         outline: none !important;
@@ -184,17 +186,17 @@ a {
 
       border-top: 0px;
       border-right: 0px;
-      border-bottom: 1px solid #000000;
+      border-bottom: 1px solid $main-color;
       border-left: 0px;
       border-radius: 0px;
 
       &:hover {
-        color: #ffffff;
-        background-color: #000000;
+        color: $secondary-color;
+        background-color: $main-color;
 
         border-top: 0px;
         border-right: 0px;
-        border-bottom: 1px solid #000000;
+        border-bottom: 1px solid $main-color;
         border-left: 0px;
         border-radius: 0px;
       }
@@ -245,7 +247,7 @@ a {
     display: flex;
   }
   .close-left-sidebar-button {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $main-color;
   }
 
   #left-sidebar-active:checked ~ .primary-menu {
