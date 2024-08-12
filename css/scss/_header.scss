@@ -11,7 +11,7 @@
 
 header {
   height: 3.3em;
-  max-width: 75em;
+  max-width: 140em;
   display: flex;
   padding: 0;
   margin: auto;
@@ -79,6 +79,15 @@ a {
     a:hover {
       border: 0px;
     }
+  }
+
+  .nav-icon {
+    min-height: 1.6rem;
+    min-width: 1.6rem;
+  }
+
+  .nav-icon.search {
+    display: block;
   }
 }
 
@@ -272,6 +281,10 @@ a {
         min-height: 1.75rem;
         min-width: 1.75rem;
       }
+    }
+
+    .nav-icon.search {
+      display: none;
     }
   }
 

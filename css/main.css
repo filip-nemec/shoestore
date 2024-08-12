@@ -11,7 +11,7 @@
 
 header {
   height: 3.3em;
-  max-width: 75em;
+  max-width: 140em;
   display: flex;
   padding: 0;
   margin: auto;
@@ -73,6 +73,13 @@ a {
 }
 .secondary-menu a a:hover {
   border: 0px;
+}
+.secondary-menu .nav-icon {
+  min-height: 1.6rem;
+  min-width: 1.6rem;
+}
+.secondary-menu .nav-icon.search {
+  display: block;
 }
 
 .site-logo {
@@ -235,6 +242,9 @@ a {
   .secondary-menu a svg {
     min-height: 1.75rem;
     min-width: 1.75rem;
+  }
+  .secondary-menu .nav-icon.search {
+    display: none;
   }
   .nav-icon.saved-items,
   .nav-icon.account {
