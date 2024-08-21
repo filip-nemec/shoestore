@@ -10,14 +10,14 @@
 }
 
 header {
-  height: 3.3em;
-  max-width: 140em;
+  min-height: 3.5em;
+  max-width: 160em;
   display: flex;
   padding: 0;
   margin: auto;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
 }
 
 label.open-left-sidebar-button {
@@ -42,8 +42,8 @@ a {
 
 .primary-menu {
   position: absolute;
-  margin-left: 0.7em;
-  overflow: scroll;
+  margin-left: 1em;
+  overflow: hidden;
 }
 .primary-menu a {
   padding: 0.5em 0.5em;
@@ -52,6 +52,7 @@ a {
   border-radius: 4px;
 }
 .primary-menu a:hover {
+  cursor: pointer;
   border: 1px solid #000000;
   border-radius: 4px;
 }
@@ -63,7 +64,7 @@ a {
 }
 
 .secondary-menu {
-  margin-right: 0.7em;
+  margin-right: 1em;
 }
 .secondary-menu a {
   padding: 0.25em 0.25em;
@@ -72,6 +73,7 @@ a {
   border-radius: 4px;
 }
 .secondary-menu a a:hover {
+  cursor: pointer;
   border: 0px;
 }
 .secondary-menu .nav-icon {
@@ -85,8 +87,8 @@ a {
 .site-logo {
   position: absolute;
   left: 50%;
-  top: 25%;
-  height: 1.4rem;
+  top: 30%;
+  height: 1.2rem;
   transform: translateX(-50%);
 }
 
@@ -104,6 +106,7 @@ a {
     min-width: 2.375rem;
   }
   .primary-menu {
+    overflow-y: auto;
     margin-left: 0;
     position: fixed;
     top: 0;
@@ -120,6 +123,7 @@ a {
     background-color: #ffffff;
   }
   .primary-menu .primary-menu-header:hover {
+    cursor: pointer;
     color: #ffffff;
     background-color: #000000;
   }
@@ -177,6 +181,7 @@ a {
     border-radius: 0px;
   }
   .primary-menu a:hover {
+    cursor: pointer;
     color: #ffffff;
     background-color: #000000;
     border-top: 0px;
@@ -233,7 +238,7 @@ a {
     top: 0;
     left: 0;
     z-index: 9;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.35);
   }
   .secondary-menu a {
     font-size: 0;
@@ -300,4 +305,97 @@ img {
   font-family: "open-sans-bold-italic";
   font-style: italic;
   src: url(../../font/OpenSans-BoldItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "open-sans-condensed-extrabold-italic";
+  font-style: italic;
+  src: url(../../font/OpenSans-Condensed-ExtraBoldItalic.ttf) format("truetype");
+}
+.hero-image {
+  position: absolute;
+  top: 2.8rem;
+  left: 0;
+  background: url("../images/hero-image-01.webp") no-repeat;
+  background-color: #ffffff;
+  background-size: 1450px;
+  width: 100%;
+  height: 46.875rem;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  z-index: -1;
+  border-bottom: 1px solid #000000;
+}
+.hero-image .hero-content {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 50%;
+  width: 80%;
+  text-wrap: wrap;
+  text-transform: uppercase;
+  text-align: center;
+  transform: translateX(-50%);
+}
+.hero-image .hero-content h1 {
+  font-family: "open-sans-condensed-extrabold-italic";
+  font-size: 1.7rem;
+  line-height: 1.8rem;
+  color: #000000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.hero-image .hero-content a {
+  font-family: "open-sans-medium";
+  font-size: 0.8rem;
+  line-height: 5rem;
+  padding: 0.5rem 2rem;
+  color: #000000;
+  background-color: #ffffff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border: 1px solid #000000;
+  border-radius: 0.2rem;
+}
+.hero-image .hero-content a:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 0.2rem;
+}
+
+@media only screen and (max-width: 68.75em) {
+  .hero-image {
+    background-size: 1200px;
+    height: 700px;
+  }
+}
+@media only screen and (max-width: 51.5625em) {
+  .hero-image {
+    background-size: 1000px;
+    background-position-y: 55%;
+    height: 650px;
+  }
+}
+@media only screen and (max-width: 42.5em) {
+  .hero-image {
+    background-size: 800px;
+    height: 600px;
+    background-position-y: 55%;
+  }
+}
+@media only screen and (max-width: 34.375em) {
+  .hero-image {
+    background-size: 600px;
+    height: 550px;
+    background-position-y: 90%;
+  }
+}
+@media only screen and (max-width: 26.25em) {
+  .hero-image {
+    background-size: 450px;
+    height: 500px;
+    background-position-y: 15%;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,7 @@
-# Shoe Store
+# Shoe Store® | Online Boutique
+
+_"Modern boutique selling rare sneakers of exclusive brands."_
 
 - project that I'm curretly working on 🟢
-- my first website from personal portfolio
-
-View website live [here](https://shoestore-b43.pages.dev/).
+- my second website from personal portfolio
+- view website live [here](https://shoestore-b43.pages.dev/)
