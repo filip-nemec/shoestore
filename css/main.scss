@@ -1,12 +1,17 @@
+//---- IMPORTS ----
+
 @import "scss/_variables.scss";
-@import "scss/_header.scss";
-@import "scss/_footer.scss";
+@import "scss/_site-header.scss";
+@import "scss/_site-footer.scss";
+@import "scss/_homepage.scss";
 
 /* 
 * {
   outline: 1px solid red;
 }
 */
+
+//---- GLOBAL SETTINGS ----
 
 body,
 html {
@@ -27,6 +32,8 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+//---- TYPOGRAPHY ----
 
 @font-face {
   font-family: "open-sans-medium";
@@ -52,103 +59,4 @@ img {
   font-family: "open-sans-condensed-extrabold-italic";
   font-style: italic;
   src: url(../../font/OpenSans-Condensed-ExtraBoldItalic.ttf) format("truetype");
-}
-
-.hero-image {
-  position: absolute;
-  top: 2.8rem;
-  left: 0;
-  background: url("../images/hero-image-01.webp") no-repeat;
-  background-color: $secondary-color;
-  background-size: 1450px;
-  width: 100%;
-  height: 46.875rem; // 750px
-  background-position-x: 50%;
-  background-position-y: 50%;
-
-  z-index: -1;
-  border-bottom: 1px solid $border-color-01;
-
-  .hero-content {
-    position: absolute;
-    bottom: 0.3rem;
-    left: 50%;
-    width: 80%;
-    text-wrap: wrap;
-    text-transform: uppercase;
-    text-align: center;
-    transform: translateX(-50%);
-
-    h1 {
-      font-family: "open-sans-condensed-extrabold-italic";
-      font-size: 1.7rem;
-      line-height: 1.8rem;
-      color: $main-color;
-      user-select: none;
-    }
-
-    a {
-      font-family: "open-sans-medium";
-      font-size: 0.8rem;
-      line-height: 5rem;
-      padding: 0.5rem 2rem;
-      color: $main-color;
-      background-color: $secondary-color;
-      user-select: none;
-      border: 1px solid $border-color-01;
-      border-radius: 0.2rem;
-
-      &:hover {
-        cursor: pointer;
-        color: $secondary-color;
-        background-color: $main-color;
-        border: 1px solid $border-color-01;
-        border-radius: 0.2rem;
-      }
-    }
-  }
-}
-
-//1100px
-@media only screen and (max-width: 68.75em) {
-  .hero-image {
-    background-size: 1200px;
-    height: 700px; // 700px
-  }
-}
-
-//825px
-@media only screen and (max-width: 51.5625em) {
-  .hero-image {
-    background-size: 1000px;
-    background-position-y: 55%;
-    height: 650px; // 650px
-  }
-}
-
-//680px
-@media only screen and (max-width: 42.5em) {
-  .hero-image {
-    background-size: 800px;
-    height: 600px; // 600px
-    background-position-y: 55%;
-  }
-}
-
-//550px
-@media only screen and (max-width: 34.375em) {
-  .hero-image {
-    background-size: 600px;
-    height: 550px; // 550px
-    background-position-y: 90%;
-  }
-}
-
-//420px
-@media only screen and (max-width: 26.25em) {
-  .hero-image {
-    background-size: 450px;
-    height: 500px; // 500px
-    background-position-y: 15%;
-  }
 }

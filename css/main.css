@@ -262,55 +262,6 @@ a {
     box-shadow: none;
   }
 }
-/* 
-* {
-  outline: 1px solid red;
-}
-*/
-body,
-html {
-  box-sizing: border-box;
-  font-family: "open-sans-medium";
-  font-size: 1rem;
-  -webkit-font-smoothing: antialiased;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-@font-face {
-  font-family: "open-sans-medium";
-  font-style: italic;
-  src: url(../../font/OpenSans-Medium.ttf) format("truetype");
-}
-@font-face {
-  font-family: "open-sans-medium-italic";
-  font-style: italic;
-  src: url(../../font/OpenSans-MediumItalic.ttf) format("truetype");
-}
-@font-face {
-  font-family: "open-sans-bold";
-  font-style: normal;
-  src: url(../../font/OpenSans-Bold.ttf) format("truetype");
-}
-@font-face {
-  font-family: "open-sans-bold-italic";
-  font-style: italic;
-  src: url(../../font/OpenSans-BoldItalic.ttf) format("truetype");
-}
-@font-face {
-  font-family: "open-sans-condensed-extrabold-italic";
-  font-style: italic;
-  src: url(../../font/OpenSans-Condensed-ExtraBoldItalic.ttf) format("truetype");
-}
 .hero-image {
   position: absolute;
   top: 2.8rem;
@@ -398,4 +349,53 @@ img {
     height: 500px;
     background-position-y: 15%;
   }
+}
+/* 
+* {
+  outline: 1px solid red;
+}
+*/
+body,
+html {
+  box-sizing: border-box;
+  font-family: "open-sans-medium";
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "open-sans-medium";
+  font-style: italic;
+  src: url(../../font/OpenSans-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "open-sans-medium-italic";
+  font-style: italic;
+  src: url(../../font/OpenSans-MediumItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "open-sans-bold";
+  font-style: normal;
+  src: url(../../font/OpenSans-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "open-sans-bold-italic";
+  font-style: italic;
+  src: url(../../font/OpenSans-BoldItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "open-sans-condensed-extrabold-italic";
+  font-style: italic;
+  src: url(../../font/OpenSans-Condensed-ExtraBoldItalic.ttf) format("truetype");
 }/*# sourceMappingURL=main.css.map */
