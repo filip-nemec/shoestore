@@ -143,7 +143,7 @@ a {
 
         svg {
           fill: $secondary-color;
-          border-right: 1 px solid $border-color-01;
+          border-right: 1px solid $border-color-01;
         }
       }
     }
@@ -152,7 +152,7 @@ a {
       justify-content: flex-end;
 
       h2 {
-        font-family: "open-sans-bold";
+        //font-family: "open-sans-regular";
         position: absolute;
         top: 1.25em;
         left: 45%;
@@ -179,7 +179,7 @@ a {
       color: $search-bar-color;
       background-color: $secondary-color;
 
-      font-family: "open-sans-medium";
+      font-family: "open-sans-regular";
       font-size: 0.875rem;
       text-transform: uppercase;
       border-bottom: 1px solid black;

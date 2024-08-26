@@ -1,4 +1,4 @@
-.hero-image {
+.hero-image.first {
   position: absolute;
   top: 2.8rem;
   left: 0;
@@ -12,50 +12,50 @@
 
   z-index: -1;
   border-bottom: 1px solid $border-color-01;
+}
 
-  .hero-content {
-    position: absolute;
-    bottom: 0.3rem;
-    left: 50%;
-    width: 80%;
-    text-wrap: wrap;
-    text-transform: uppercase;
-    text-align: center;
-    transform: translateX(-50%);
+.hero-content {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 50%;
+  width: 80%;
+  text-wrap: wrap;
+  text-transform: uppercase;
+  text-align: center;
+  transform: translateX(-50%);
 
-    h1 {
-      font-family: "open-sans-condensed-extrabold-italic";
-      font-size: 1.7rem;
-      line-height: 1.8rem;
-      color: $main-color;
-      user-select: none;
-    }
+  h1 {
+    font-family: "open-sans-condensed-bold";
+    font-size: 1.7rem;
+    line-height: 1.8rem;
+    color: $main-color;
+    user-select: none;
+  }
 
-    a {
-      font-family: "open-sans-medium";
-      font-size: 0.8rem;
-      line-height: 5rem;
-      padding: 0.5rem 2rem;
-      color: $main-color;
-      background-color: $secondary-color;
-      user-select: none;
+  a {
+    //font-family: "open-sans-regular";
+    font-size: 0.8rem;
+    line-height: 5rem;
+    padding: 0.5rem 2rem;
+    color: $main-color;
+    background-color: $secondary-color;
+    user-select: none;
+    border: 1px solid $border-color-01;
+    border-radius: 0.2rem;
+
+    &:hover {
+      cursor: pointer;
+      color: $secondary-color;
+      background-color: $main-color;
       border: 1px solid $border-color-01;
       border-radius: 0.2rem;
-
-      &:hover {
-        cursor: pointer;
-        color: $secondary-color;
-        background-color: $main-color;
-        border: 1px solid $border-color-01;
-        border-radius: 0.2rem;
-      }
     }
   }
 }
 
 //1100px
 @media only screen and (max-width: 68.75em) {
-  .hero-image {
+  .hero-image.first {
     background-size: 1200px;
     height: 700px; // 700px
   }
@@ -63,7 +63,7 @@
 
 //825px
 @media only screen and (max-width: 51.5625em) {
-  .hero-image {
+  .hero-image.first {
     background-size: 1000px;
     background-position-y: 55%;
     height: 650px; // 650px
@@ -72,7 +72,7 @@
 
 //680px
 @media only screen and (max-width: 42.5em) {
-  .hero-image {
+  .hero-image.first {
     background-size: 800px;
     height: 600px; // 600px
     background-position-y: 55%;
@@ -81,7 +81,7 @@
 
 //550px
 @media only screen and (max-width: 34.375em) {
-  .hero-image {
+  .hero-image.first {
     background-size: 600px;
     height: 550px; // 550px
     background-position-y: 90%;
@@ -90,7 +90,7 @@
 
 //420px
 @media only screen and (max-width: 26.25em) {
-  .hero-image {
+  .hero-image.first {
     background-size: 450px;
     height: 500px; // 500px
     background-position-y: 15%;

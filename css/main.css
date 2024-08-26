@@ -129,13 +129,12 @@ a {
   }
   .primary-menu .primary-menu-header:hover svg {
     fill: #ffffff;
-    border-right: 1 px solid #000000;
+    border-right: 1px solid #000000;
   }
   .primary-menu label {
     justify-content: flex-end;
   }
   .primary-menu label h2 {
-    font-family: "open-sans-bold";
     position: absolute;
     top: 1.25em;
     left: 45%;
@@ -157,7 +156,7 @@ a {
     padding: 1.1em 1.2em 1em 3.3em;
     color: #757575;
     background-color: #ffffff;
-    font-family: "open-sans-medium";
+    font-family: "open-sans-regular";
     font-size: 0.875rem;
     text-transform: uppercase;
     border-bottom: 1px solid black;
@@ -262,7 +261,7 @@ a {
     box-shadow: none;
   }
 }
-.hero-image {
+.hero-image.first {
   position: absolute;
   top: 2.8rem;
   left: 0;
@@ -276,7 +275,8 @@ a {
   z-index: -1;
   border-bottom: 1px solid #000000;
 }
-.hero-image .hero-content {
+
+.hero-content {
   position: absolute;
   bottom: 0.3rem;
   left: 50%;
@@ -286,8 +286,8 @@ a {
   text-align: center;
   transform: translateX(-50%);
 }
-.hero-image .hero-content h1 {
-  font-family: "open-sans-condensed-extrabold-italic";
+.hero-content h1 {
+  font-family: "open-sans-condensed-bold";
   font-size: 1.7rem;
   line-height: 1.8rem;
   color: #000000;
@@ -295,8 +295,7 @@ a {
      -moz-user-select: none;
           user-select: none;
 }
-.hero-image .hero-content a {
-  font-family: "open-sans-medium";
+.hero-content a {
   font-size: 0.8rem;
   line-height: 5rem;
   padding: 0.5rem 2rem;
@@ -308,7 +307,7 @@ a {
   border: 1px solid #000000;
   border-radius: 0.2rem;
 }
-.hero-image .hero-content a:hover {
+.hero-content a:hover {
   cursor: pointer;
   color: #ffffff;
   background-color: #000000;
@@ -317,34 +316,34 @@ a {
 }
 
 @media only screen and (max-width: 68.75em) {
-  .hero-image {
+  .hero-image.first {
     background-size: 1200px;
     height: 700px;
   }
 }
 @media only screen and (max-width: 51.5625em) {
-  .hero-image {
+  .hero-image.first {
     background-size: 1000px;
     background-position-y: 55%;
     height: 650px;
   }
 }
 @media only screen and (max-width: 42.5em) {
-  .hero-image {
+  .hero-image.first {
     background-size: 800px;
     height: 600px;
     background-position-y: 55%;
   }
 }
 @media only screen and (max-width: 34.375em) {
-  .hero-image {
+  .hero-image.first {
     background-size: 600px;
     height: 550px;
     background-position-y: 90%;
   }
 }
 @media only screen and (max-width: 26.25em) {
-  .hero-image {
+  .hero-image.first {
     background-size: 450px;
     height: 500px;
     background-position-y: 15%;
@@ -358,7 +357,7 @@ a {
 body,
 html {
   box-sizing: border-box;
-  font-family: "open-sans-medium";
+  font-family: "open-sans-regular";
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
 }
@@ -375,27 +374,50 @@ img {
 }
 
 @font-face {
+  font-family: "open-sans-regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../../font/open-sans-regular.woff") format("woff"), url("../../font/open-sans-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "open-sans-bold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../../font/open-sans-bold.woff") format("woff"), url("../../font/open-sans-bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "open-sans-condensed-bold";
+  font-weight: bold;
+  font-style: condensed;
+  src: url("../../font/open-sans-condensed-bold.woff") format("woff"), url("../../font/open-sans-condensed-bold.woff2") format("woff2");
+}
+/*@font-face {
   font-family: "open-sans-medium";
-  font-style: italic;
+  font-weight: normal;
+  font-style: normal;
   src: url("../../font/OpenSans-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "open-sans-medium-italic";
+  font-weight: normal;
   font-style: italic;
   src: url("../../font/OpenSans-MediumItalic.ttf") format("truetype");
 }
 @font-face {
   font-family: "open-sans-bold";
+  font-weight: bold;
   font-style: normal;
   src: url("../../font/OpenSans-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "open-sans-bold-italic";
+  font-weight: bold;
   font-style: italic;
   src: url("../../font/OpenSans-BoldItalic.ttf") format("truetype");
 }
 @font-face {
   font-family: "open-sans-condensed-extrabold-italic";
+  font-weight: bold;
   font-style: italic;
   src: url("../../font/OpenSans-Condensed-ExtraBoldItalic.ttf") format("truetype");
-}/*# sourceMappingURL=main.css.map */
+}*//*# sourceMappingURL=main.css.map */
