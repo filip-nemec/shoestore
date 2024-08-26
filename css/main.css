@@ -116,7 +116,7 @@ a {
     height: 100%;
     background-color: #ffffff;
     border-right: 1px solid #000000;
-    transition: 0.3s ease-out;
+    transition: 0.25s ease-out;
   }
   .primary-menu .primary-menu-header {
     color: #000000;
@@ -230,7 +230,7 @@ a {
   #left-sidebar-active:checked ~ .primary-menu {
     left: 0;
   }
-  #left-sidebar-active:checked ~ #overlay {
+  /*#left-sidebar-active:checked ~ #overlay {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -238,7 +238,7 @@ a {
     left: 0;
     z-index: 9;
     background: rgba(0, 0, 0, 0.35);
-  }
+  }*/
   .secondary-menu a {
     font-size: 0;
     border: 0px;
@@ -261,19 +261,42 @@ a {
     box-shadow: none;
   }
 }
-.hero-image.first {
+.hero-image {
   position: absolute;
-  top: 2.8rem;
   left: 0;
-  background: url("../images/hero-image-01.webp") no-repeat;
-  background-color: #ffffff;
-  background-size: 1450px;
-  width: 100%;
   height: 46.875rem;
+  width: 100%;
+  z-index: -1;
+  background-color: #ffffff;
+  border-bottom: 1px solid #000000;
+}
+.hero-image.first {
+  top: 2.8rem;
+  background: url("../images/hero-image-1.avif") no-repeat;
+  background-size: 1450px;
   background-position-x: 50%;
   background-position-y: 50%;
-  z-index: -1;
-  border-bottom: 1px solid #000000;
+}
+.hero-image.second {
+  top: 49.675rem;
+  background: url("../images/hero-image-2.avif") no-repeat;
+  background-size: 1450px;
+  background-position-x: 50%;
+  background-position-y: 60%;
+}
+.hero-image.third {
+  top: 96.55rem;
+  background: url("../images/hero-image-3.avif") no-repeat;
+  background-size: 1450px;
+  background-position-x: 50%;
+  background-position-y: 55%;
+}
+.hero-image.fourth {
+  top: 143.425rem;
+  background: url("../images/hero-image-4.avif") no-repeat;
+  background-size: 1450px;
+  background-position-x: 50%;
+  background-position-y: 50%;
 }
 
 .hero-content {
@@ -318,35 +341,110 @@ a {
 @media only screen and (max-width: 68.75em) {
   .hero-image.first {
     background-size: 1200px;
-    height: 700px;
+    height: 43.75rem;
+  }
+  .hero-image.second {
+    top: 46.55rem;
+    background-size: 1200px;
+    height: 43.75rem;
+  }
+  .hero-image.third {
+    top: 90.3rem;
+    background-size: 1200px;
+    height: 43.75rem;
+  }
+  .hero-image.fourth {
+    top: 134.05rem;
+    background-size: 1200px;
+    height: 43.75rem;
   }
 }
 @media only screen and (max-width: 51.5625em) {
   .hero-image.first {
     background-size: 1000px;
-    background-position-y: 55%;
-    height: 650px;
+    height: 40.625rem;
+  }
+  .hero-image.second {
+    top: 43.425rem;
+    background-size: 1000px;
+    height: 40.625rem;
+  }
+  .hero-image.third {
+    top: 84.05rem;
+    background-size: 1000px;
+    height: 40.625rem;
+  }
+  .hero-image.fourth {
+    top: 124.675rem;
+    background-size: 1000px;
+    height: 40.625rem;
   }
 }
 @media only screen and (max-width: 42.5em) {
   .hero-image.first {
     background-size: 800px;
-    height: 600px;
-    background-position-y: 55%;
+    height: 37.5rem;
+  }
+  .hero-image.second {
+    top: 40.3rem;
+    background-size: 800px;
+    height: 37.5rem;
+  }
+  .hero-image.third {
+    top: 77.8rem;
+    background-size: 800px;
+    height: 37.5rem;
+  }
+  .hero-image.fourth {
+    top: 115.3rem;
+    background-size: 800px;
+    height: 37.5rem;
   }
 }
 @media only screen and (max-width: 34.375em) {
   .hero-image.first {
     background-size: 600px;
-    height: 550px;
-    background-position-y: 90%;
+    height: 34.375rem;
+  }
+  .hero-image.second {
+    top: 37.175rem;
+    background-size: 600px;
+    height: 34.375rem;
+  }
+  .hero-image.third {
+    top: 71.55rem;
+    background-size: 600px;
+    height: 34.375rem;
+  }
+  .hero-image.fourth {
+    top: 105.925rem;
+    background-size: 600px;
+    height: 34.375rem;
   }
 }
 @media only screen and (max-width: 26.25em) {
   .hero-image.first {
     background-size: 450px;
-    height: 500px;
-    background-position-y: 15%;
+    height: 31.25rem;
+    background-position-y: 10%;
+  }
+  .hero-image.second {
+    top: 34.05rem;
+    background-size: 450px;
+    height: 31.25rem;
+    background-position-y: -20%;
+  }
+  .hero-image.third {
+    top: 65.3rem;
+    background-size: 450px;
+    height: 31.25rem;
+    background-position-y: -20%;
+  }
+  .hero-image.fourth {
+    top: 96.55rem;
+    background-size: 450px;
+    height: 31.25rem;
+    background-position-y: -20%;
   }
 }
 /* 
@@ -390,34 +488,4 @@ img {
   font-weight: bold;
   font-style: condensed;
   src: url("../../font/open-sans-condensed-bold.woff") format("woff"), url("../../font/open-sans-condensed-bold.woff2") format("woff2");
-}
-/*@font-face {
-  font-family: "open-sans-medium";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../../font/OpenSans-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "open-sans-medium-italic";
-  font-weight: normal;
-  font-style: italic;
-  src: url("../../font/OpenSans-MediumItalic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "open-sans-bold";
-  font-weight: bold;
-  font-style: normal;
-  src: url("../../font/OpenSans-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "open-sans-bold-italic";
-  font-weight: bold;
-  font-style: italic;
-  src: url("../../font/OpenSans-BoldItalic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "open-sans-condensed-extrabold-italic";
-  font-weight: bold;
-  font-style: italic;
-  src: url("../../font/OpenSans-Condensed-ExtraBoldItalic.ttf") format("truetype");
-}*//*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

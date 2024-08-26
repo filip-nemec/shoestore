@@ -1,17 +1,43 @@
-.hero-image.first {
+.hero-image {
   position: absolute;
-  top: 2.8rem;
   left: 0;
-  background: url("../images/hero-image-01.webp") no-repeat;
-  background-color: $secondary-color;
-  background-size: 1450px;
-  width: 100%;
   height: 46.875rem; // 750px
-  background-position-x: 50%;
-  background-position-y: 50%;
-
+  width: 100%;
   z-index: -1;
+  background-color: $secondary-color;
   border-bottom: 1px solid $border-color-01;
+
+  &.first {
+    top: 2.8rem;
+    background: url("../images/hero-image-1.avif") no-repeat;
+    background-size: 1450px;
+    background-position-x: 50%;
+    background-position-y: 50%;
+  }
+
+  &.second {
+    top: 46.875rem + 2.8rem;
+    background: url("../images/hero-image-2.avif") no-repeat;
+    background-size: 1450px;
+    background-position-x: 50%;
+    background-position-y: 60%;
+  }
+
+  &.third {
+    top: 2 * 46.875rem + 2.8rem;
+    background: url("../images/hero-image-3.avif") no-repeat;
+    background-size: 1450px;
+    background-position-x: 50%;
+    background-position-y: 55%;
+  }
+
+  &.fourth {
+    top: 3 * 46.875rem + 2.8rem;
+    background: url("../images/hero-image-4.avif") no-repeat;
+    background-size: 1450px;
+    background-position-x: 50%;
+    background-position-y: 50%;
+  }
 }
 
 .hero-content {
@@ -33,7 +59,6 @@
   }
 
   a {
-    //font-family: "open-sans-regular";
     font-size: 0.8rem;
     line-height: 5rem;
     padding: 0.5rem 2rem;
@@ -57,7 +82,25 @@
 @media only screen and (max-width: 68.75em) {
   .hero-image.first {
     background-size: 1200px;
-    height: 700px; // 700px
+    height: 43.75rem; // 700px
+  }
+
+  .hero-image.second {
+    top: 43.75rem + 2.8rem;
+    background-size: 1200px;
+    height: 43.75rem; // 700px
+  }
+
+  .hero-image.third {
+    top: 2 * 43.75rem + 2.8rem;
+    background-size: 1200px;
+    height: 43.75rem; // 700px
+  }
+
+  .hero-image.fourth {
+    top: 3 * 43.75rem + 2.8rem;
+    background-size: 1200px;
+    height: 43.75rem; // 700px
   }
 }
 
@@ -65,8 +108,25 @@
 @media only screen and (max-width: 51.5625em) {
   .hero-image.first {
     background-size: 1000px;
-    background-position-y: 55%;
-    height: 650px; // 650px
+    height: 40.625rem; // 650px
+  }
+
+  .hero-image.second {
+    top: 40.625rem + 2.8rem;
+    background-size: 1000px;
+    height: 40.625rem; // 650px
+  }
+
+  .hero-image.third {
+    top: 2 * 40.625rem + 2.8rem;
+    background-size: 1000px;
+    height: 40.625rem; // 650px
+  }
+
+  .hero-image.fourth {
+    top: 3 * 40.625rem + 2.8rem;
+    background-size: 1000px;
+    height: 40.625rem; // 650px
   }
 }
 
@@ -74,8 +134,25 @@
 @media only screen and (max-width: 42.5em) {
   .hero-image.first {
     background-size: 800px;
-    height: 600px; // 600px
-    background-position-y: 55%;
+    height: 37.5rem; // 600px
+  }
+
+  .hero-image.second {
+    top: 37.5rem + 2.8rem;
+    background-size: 800px;
+    height: 37.5rem; // 600px
+  }
+
+  .hero-image.third {
+    top: 2 * 37.5rem + 2.8rem;
+    background-size: 800px;
+    height: 37.5rem; // 600px
+  }
+
+  .hero-image.fourth {
+    top: 3 * 37.5rem + 2.8rem;
+    background-size: 800px;
+    height: 37.5rem; // 600px
   }
 }
 
@@ -83,8 +160,25 @@
 @media only screen and (max-width: 34.375em) {
   .hero-image.first {
     background-size: 600px;
-    height: 550px; // 550px
-    background-position-y: 90%;
+    height: 34.375rem; // 550px
+  }
+
+  .hero-image.second {
+    top: 34.375rem + 2.8rem;
+    background-size: 600px;
+    height: 34.375rem; // 550px
+  }
+
+  .hero-image.third {
+    top: 2 * 34.375rem + 2.8rem;
+    background-size: 600px;
+    height: 34.375rem; // 550px
+  }
+
+  .hero-image.fourth {
+    top: 3 * 34.375rem + 2.8rem;
+    background-size: 600px;
+    height: 34.375rem; // 550px
   }
 }
 
@@ -92,7 +186,28 @@
 @media only screen and (max-width: 26.25em) {
   .hero-image.first {
     background-size: 450px;
-    height: 500px; // 500px
-    background-position-y: 15%;
+    height: 31.25rem; // 500px
+    background-position-y: 10%;
+  }
+
+  .hero-image.second {
+    top: 31.25rem + 2.8rem;
+    background-size: 450px;
+    height: 31.25rem; // 500px
+    background-position-y: -20%;
+  }
+
+  .hero-image.third {
+    top: 2 * 31.25rem + 2.8rem;
+    background-size: 450px;
+    height: 31.25rem; // 500px
+    background-position-y: -20%;
+  }
+
+  .hero-image.fourth {
+    top: 3 * 31.25rem + 2.8rem;
+    background-size: 450px;
+    height: 31.25rem; // 500px
+    background-position-y: -20%;
   }
 }
