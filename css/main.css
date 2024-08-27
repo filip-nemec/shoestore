@@ -10,8 +10,8 @@
 }
 
 header {
-  min-height: 3.5em;
-  max-width: 160em;
+  min-height: 2.8rem;
+  max-width: 131.25rem;
   display: flex;
   padding: 0;
   margin: auto;
@@ -42,12 +42,12 @@ a {
 
 .primary-menu {
   position: absolute;
-  margin-left: 1em;
+  margin-left: 0.8rem;
   overflow: hidden;
 }
 .primary-menu a {
-  padding: 0.5em 0.5em;
-  margin-right: 0.5em;
+  padding: 0.4rem 0.4rem;
+  margin-right: 0.4rem;
   border: 1px solid #ffffff;
   border-radius: 4px;
 }
@@ -64,11 +64,11 @@ a {
 }
 
 .secondary-menu {
-  margin-right: 1em;
+  margin-right: 0.8rem;
 }
 .secondary-menu a {
-  padding: 0.25em 0.25em;
-  margin-left: 0.5em;
+  padding: 0.2rem 0.2rem;
+  margin-left: 0.4rem;
   border: 1px solid #ffffff;
   border-radius: 4px;
 }
@@ -88,7 +88,7 @@ a {
   position: absolute;
   left: 50%;
   top: 30%;
-  height: 1.2rem;
+  height: 1.15rem;
   transform: translateX(-50%);
 }
 
@@ -101,7 +101,7 @@ a {
 @media only screen and (max-width: 51.5625em) {
   .nav-icon.menu-search {
     display: inline-block;
-    margin-left: 0.7em;
+    margin-left: 0.7rem;
     min-height: 2.375rem;
     min-width: 2.375rem;
   }
@@ -136,24 +136,24 @@ a {
   }
   .primary-menu label h2 {
     position: absolute;
-    top: 1.25em;
+    top: 1.1rem;
     left: 45%;
   }
   .primary-menu label .nav-icon.close {
-    margin: 0.5em 0.7em;
+    margin: 0.4rem 0.6rem;
     min-height: 2rem;
     min-width: 2rem;
   }
   .primary-menu .nav-icon.search {
     display: block;
     position: absolute;
-    margin: 0.9em;
+    margin: 0.7rem 0.7rem 0.7rem 1rem;
     fill: #757575;
   }
   .primary-menu #left-sidebar-search {
     display: block;
     width: 100%;
-    padding: 1.1em 1.2em 1em 3.3em;
+    padding: 0.85rem 1.2rem 0.85rem 3.3rem;
     color: #757575;
     background-color: #ffffff;
     font-family: "open-sans-regular";
@@ -170,8 +170,8 @@ a {
   }
   .primary-menu a {
     font-size: 0.875rem;
-    padding: 1.2em 1.2em;
-    margin-right: 0em;
+    padding: 1rem 1rem;
+    margin-right: 0rem;
     width: 100%;
     border-top: 0px;
     border-right: 0px;
@@ -202,10 +202,10 @@ a {
     border-bottom: 0px solid #ff0000;
   }
   .primary-menu ul.hide-on-desktop-menu .first-link-with-margin {
-    margin-top: 3.5em;
+    margin-top: 3.5rem;
   }
   .primary-menu ul.hide-on-desktop-menu .last-link-with-margin {
-    margin-bottom: 3.5em;
+    margin-bottom: 3.5rem;
   }
   .primary-menu .hide-on-desktop-icons {
     display: flex;
@@ -218,7 +218,7 @@ a {
     flex-direction: row;
   }
   .primary-menu .hide-on-desktop-icons img {
-    margin: 1em 0.2em 1em 0.2em;
+    margin: 1rem 0.2rem 1rem 0.2rem;
   }
   .open-left-sidebar-button,
   .close-left-sidebar-button {
@@ -230,15 +230,6 @@ a {
   #left-sidebar-active:checked ~ .primary-menu {
     left: 0;
   }
-  /*#left-sidebar-active:checked ~ #overlay {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9;
-    background: rgba(0, 0, 0, 0.35);
-  }*/
   .secondary-menu a {
     font-size: 0;
     border: 0px;
@@ -255,7 +246,7 @@ a {
     display: none;
   }
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 40.625em) {
   .primary-menu {
     width: 100%;
     box-shadow: none;
@@ -447,11 +438,6 @@ a {
     background-position-y: -20%;
   }
 }
-/* 
-* {
-  outline: 1px solid red;
-}
-*/
 body,
 html {
   box-sizing: border-box;
