@@ -80,134 +80,134 @@
 
 //1100px
 @media only screen and (max-width: 68.75em) {
-  .hero-image.first {
-    background-size: 1200px;
+  .hero-image {
     height: 43.75rem; //700px
-  }
 
-  .hero-image.second {
-    top: 43.75rem + 2.8rem;
-    background-size: 1200px;
-    height: 43.75rem;
-  }
+    &.first {
+      background-size: 1200px;
+    }
 
-  .hero-image.third {
-    top: 2 * 43.75rem + 2.8rem;
-    background-size: 1200px;
-    height: 43.75rem;
-  }
+    &.second {
+      top: 43.75rem + 2.8rem;
+      background-size: 1200px;
+    }
 
-  .hero-image.fourth {
-    top: 3 * 43.75rem + 2.8rem;
-    background-size: 1200px;
-    height: 43.75rem;
+    &.third {
+      top: 2 * 43.75rem + 2.8rem;
+      background-size: 1200px;
+    }
+
+    &.fourth {
+      top: 3 * 43.75rem + 2.8rem;
+      background-size: 1200px;
+    }
   }
 }
 
 //825px
 @media only screen and (max-width: 51.5625em) {
-  .hero-image.first {
-    background-size: 1000px;
+  .hero-image {
     height: 40.625rem; //650px
-  }
 
-  .hero-image.second {
-    top: 40.625rem + 2.8rem;
-    background-size: 1000px;
-    height: 40.625rem;
-  }
+    &.first {
+      background-size: 1000px;
+    }
 
-  .hero-image.third {
-    top: 2 * 40.625rem + 2.8rem;
-    background-size: 1000px;
-    height: 40.625rem;
-  }
+    &.second {
+      top: 40.625rem + 2.8rem;
+      background-size: 1000px;
+    }
 
-  .hero-image.fourth {
-    top: 3 * 40.625rem + 2.8rem;
-    background-size: 1000px;
-    height: 40.625rem;
+    &.third {
+      top: 2 * 40.625rem + 2.8rem;
+      background-size: 1000px;
+    }
+
+    &.fourth {
+      top: 3 * 40.625rem + 2.8rem;
+      background-size: 1000px;
+    }
   }
 }
 
 //680px
 @media only screen and (max-width: 42.5em) {
-  .hero-image.first {
-    background-size: 800px;
+  .hero-image {
     height: 37.5rem; //600px
-  }
 
-  .hero-image.second {
-    top: 37.5rem + 2.8rem;
-    background-size: 800px;
-    height: 37.5rem;
-  }
+    &.first {
+      background-size: 800px;
+    }
 
-  .hero-image.third {
-    top: 2 * 37.5rem + 2.8rem;
-    background-size: 800px;
-    height: 37.5rem;
-  }
+    &.second {
+      top: 37.5rem + 2.8rem;
+      background-size: 800px;
+    }
 
-  .hero-image.fourth {
-    top: 3 * 37.5rem + 2.8rem;
-    background-size: 800px;
-    height: 37.5rem;
+    &.third {
+      top: 2 * 37.5rem + 2.8rem;
+      background-size: 800px;
+    }
+
+    &.fourth {
+      top: 3 * 37.5rem + 2.8rem;
+      background-size: 800px;
+    }
   }
 }
 
 //550px
 @media only screen and (max-width: 34.375em) {
-  .hero-image.first {
-    background-size: 600px;
+  .hero-image {
     height: 34.375rem; //550px
-  }
 
-  .hero-image.second {
-    top: 34.375rem + 2.8rem;
-    background-size: 600px;
-    height: 34.375rem;
-  }
+    &.first {
+      background-size: 600px;
+    }
 
-  .hero-image.third {
-    top: 2 * 34.375rem + 2.8rem;
-    background-size: 600px;
-    height: 34.375rem;
-  }
+    &.second {
+      top: 34.375rem + 2.8rem;
+      background-size: 600px;
+    }
 
-  .hero-image.fourth {
-    top: 3 * 34.375rem + 2.8rem;
-    background-size: 600px;
-    height: 34.375rem;
+    &.third {
+      top: 2 * 34.375rem + 2.8rem;
+      background-size: 600px;
+    }
+
+    &.fourth {
+      top: 3 * 34.375rem + 2.8rem;
+      background-size: 600px;
+    }
   }
 }
 
 //420px
 @media only screen and (max-width: 26.25em) {
-  .hero-image.first {
-    background-size: 450px;
+  .hero-image {
     height: 31.25rem; //500px
-    background-position-y: 10%;
-  }
 
-  .hero-image.second {
-    top: 31.25rem + 2.8rem;
-    background-size: 450px;
-    height: 31.25rem;
-    background-position-y: -20%;
-  }
+    &.first {
+      background-size: 450px;
+      background-position-y: 10%;
+    }
 
-  .hero-image.third {
-    top: 2 * 31.25rem + 2.8rem;
-    background-size: 450px;
-    height: 31.25rem;
-    background-position-y: -20%;
-  }
+    &.second {
+      top: 31.25rem + 2.8rem;
+      background-size: 450px;
+      background-position-y: -20%;
+    }
 
-  .hero-image.fourth {
-    top: 3 * 31.25rem + 2.8rem;
-    background-size: 450px;
-    height: 31.25rem;
-    background-position-y: -20%;
+    &.third {
+      top: 2 * 31.25rem + 2.8rem;
+      background-size: 450px;
+      background-position-y: -20%;
+    }
+
+    &.fourth {
+      top: 3 * 31.25rem + 2.8rem;
+      background-size: 450px;
+      background-position-y: -20%;
+    }
   }
 }

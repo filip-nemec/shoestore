@@ -249,7 +249,6 @@ a {
 @media only screen and (max-width: 40.625em) {
   .primary-menu {
     width: 100%;
-    box-shadow: none;
   }
 }
 .hero-image {
@@ -330,111 +329,106 @@ a {
 }
 
 @media only screen and (max-width: 68.75em) {
+  .hero-image {
+    height: 43.75rem;
+  }
   .hero-image.first {
     background-size: 1200px;
-    height: 43.75rem;
   }
   .hero-image.second {
     top: 46.55rem;
     background-size: 1200px;
-    height: 43.75rem;
   }
   .hero-image.third {
     top: 90.3rem;
     background-size: 1200px;
-    height: 43.75rem;
   }
   .hero-image.fourth {
     top: 134.05rem;
     background-size: 1200px;
-    height: 43.75rem;
   }
 }
 @media only screen and (max-width: 51.5625em) {
+  .hero-image {
+    height: 40.625rem;
+  }
   .hero-image.first {
     background-size: 1000px;
-    height: 40.625rem;
   }
   .hero-image.second {
     top: 43.425rem;
     background-size: 1000px;
-    height: 40.625rem;
   }
   .hero-image.third {
     top: 84.05rem;
     background-size: 1000px;
-    height: 40.625rem;
   }
   .hero-image.fourth {
     top: 124.675rem;
     background-size: 1000px;
-    height: 40.625rem;
   }
 }
 @media only screen and (max-width: 42.5em) {
+  .hero-image {
+    height: 37.5rem;
+  }
   .hero-image.first {
     background-size: 800px;
-    height: 37.5rem;
   }
   .hero-image.second {
     top: 40.3rem;
     background-size: 800px;
-    height: 37.5rem;
   }
   .hero-image.third {
     top: 77.8rem;
     background-size: 800px;
-    height: 37.5rem;
   }
   .hero-image.fourth {
     top: 115.3rem;
     background-size: 800px;
-    height: 37.5rem;
   }
 }
 @media only screen and (max-width: 34.375em) {
+  .hero-image {
+    height: 34.375rem;
+  }
   .hero-image.first {
     background-size: 600px;
-    height: 34.375rem;
   }
   .hero-image.second {
     top: 37.175rem;
     background-size: 600px;
-    height: 34.375rem;
   }
   .hero-image.third {
     top: 71.55rem;
     background-size: 600px;
-    height: 34.375rem;
   }
   .hero-image.fourth {
     top: 105.925rem;
     background-size: 600px;
-    height: 34.375rem;
   }
 }
 @media only screen and (max-width: 26.25em) {
+  .hero-image {
+    height: 31.25rem;
+  }
   .hero-image.first {
     background-size: 450px;
-    height: 31.25rem;
     background-position-y: 10%;
   }
   .hero-image.second {
     top: 34.05rem;
     background-size: 450px;
-    height: 31.25rem;
     background-position-y: -20%;
   }
   .hero-image.third {
     top: 65.3rem;
     background-size: 450px;
-    height: 31.25rem;
     background-position-y: -20%;
   }
   .hero-image.fourth {
     top: 96.55rem;
     background-size: 450px;
-    height: 31.25rem;
     background-position-y: -20%;
   }
 }
