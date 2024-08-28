@@ -3,5 +3,5 @@
 _"Modern boutique selling rare sneakers of exclusive brands."_
 
 - project that I'm curretly working on 🟢
-- my second website from personal portfolio
+- my first programmed project, my second website
 - view website live [here](https://shoestore-b43.pages.dev/)
