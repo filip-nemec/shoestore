@@ -1,7 +1,6 @@
 # Shoe Store® | Online Boutique
 
-_"Modern boutique selling rare sneakers of exclusive brands."_
-
-- project that I'm curretly working on 🟢
+- portfolio project that I'm curretly working on 🟢
+- homepage design of online shoe boutique
 - my first programmed project
-- view website live [here](https://shoestore-b43.pages.dev/)
+- view website live [here](shoe-store-42v.pages.dev/)

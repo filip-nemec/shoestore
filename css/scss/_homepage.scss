@@ -9,7 +9,7 @@
 
   &.first {
     top: 2.8rem;
-    background: url("../images/hero-image-1.avif") no-repeat;
+    background: url("../images/hero-image-men-01.avif") no-repeat;
     background-size: 1450px;
     background-position-x: 50%;
     background-position-y: 50%;
@@ -17,7 +17,7 @@
 
   &.second {
     top: 46.875rem + 2.8rem;
-    background: url("../images/hero-image-2.avif") no-repeat;
+    background: url("../images/hero-image-women-01.avif") no-repeat;
     background-size: 1450px;
     background-position-x: 50%;
     background-position-y: 60%;
@@ -25,7 +25,7 @@
 
   &.third {
     top: 2 * 46.875rem + 2.8rem;
-    background: url("../images/hero-image-3.avif") no-repeat;
+    background: url("../images/hero-image-kids-01.avif") no-repeat;
     background-size: 1450px;
     background-position-x: 50%;
     background-position-y: 55%;
@@ -33,10 +33,11 @@
 
   &.fourth {
     top: 3 * 46.875rem + 2.8rem;
-    background: url("../images/hero-image-4.avif") no-repeat;
-    background-size: 1450px;
+    background: url("../images/hero-image-explore-01.avif") no-repeat;
+    background-size: 1550px;
     background-position-x: 50%;
     background-position-y: 50%;
+    background-color: #010101;
   }
 }
 
@@ -52,14 +53,14 @@
 
   h1 {
     font-family: "open-sans-condensed-bold";
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 1.8rem;
     color: $main-color;
     user-select: none;
   }
 
   a {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     line-height: 5rem;
     padding: 0.5rem 2rem;
     color: $main-color;
@@ -76,6 +77,10 @@
       border-radius: 0.2rem;
     }
   }
+}
+
+.hero-content .heading-explore {
+  color: $secondary-color;
 }
 
 //1100px
@@ -99,7 +104,7 @@
 
     &.fourth {
       top: 3 * 43.75rem + 2.8rem;
-      background-size: 1200px;
+      background-size: 1400px;
     }
   }
 }
@@ -125,7 +130,7 @@
 
     &.fourth {
       top: 3 * 40.625rem + 2.8rem;
-      background-size: 1000px;
+      background-size: 1300px;
     }
   }
 }
@@ -151,7 +156,8 @@
 
     &.fourth {
       top: 3 * 37.5rem + 2.8rem;
-      background-size: 800px;
+      background-size: 1100px;
+      background-position-y: 100%;
     }
   }
 }
@@ -177,7 +183,7 @@
 
     &.fourth {
       top: 3 * 34.375rem + 2.8rem;
-      background-size: 600px;
+      background-size: 1100px;
     }
   }
 }
@@ -206,8 +212,8 @@
 
     &.fourth {
       top: 3 * 31.25rem + 2.8rem;
-      background-size: 450px;
-      background-position-y: -20%;
+      background-size: 1000px;
+      background-position-y: 100%;
     }
   }
 }

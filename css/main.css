@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .main-nav {
   width: 100%;
   position: fixed;
@@ -17,7 +18,7 @@ header {
   margin: auto;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 label.open-left-sidebar-button {
@@ -88,7 +89,7 @@ a {
   position: absolute;
   left: 50%;
   top: 30%;
-  height: 1.15rem;
+  height: 1.1rem;
   transform: translateX(-50%);
 }
 
@@ -251,6 +252,160 @@ a {
     width: 100%;
   }
 }
+.site-footer {
+  position: relative;
+  z-index: -10;
+  left: 0;
+  top: 190.3rem;
+  width: 100%;
+  font-size: 0.75rem;
+  background-color: #ffffff;
+}
+
+.footer-content-desktop {
+  display: flex;
+  max-width: 131.25rem;
+  width: 100%;
+  margin: auto;
+}
+.footer-content-desktop div {
+  width: 16.66%;
+  padding: 1rem;
+}
+.footer-content-desktop .box-1,
+.footer-content-desktop .box-2,
+.footer-content-desktop .box-3,
+.footer-content-desktop .box-4,
+.footer-content-desktop .box-5 {
+  border-right: 1px solid #000000;
+}
+.footer-content-desktop h3 {
+  text-transform: uppercase;
+  padding: 0.5rem 0 1.5rem 0;
+}
+.footer-content-desktop ul,
+.footer-content-desktop li {
+  flex-direction: column;
+  white-space: wrap;
+  line-height: 1rem;
+}
+.footer-content-desktop li {
+  padding: 0 0 0.8rem 0;
+}
+.footer-content-desktop a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  color: #000000;
+  padding: 1rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.footer-content-tablet-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 68.75em) {
+  .site-footer {
+    top: 177.8rem;
+  }
+  .footer-content-desktop {
+    display: none;
+  }
+  .footer-content-tablet-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .footer-content-tablet-mobile div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+  }
+  .footer-content-tablet-mobile div:last-child {
+    border-bottom: none;
+  }
+  .footer-content-tablet-mobile .accordion-label {
+    position: relative;
+    text-transform: uppercase;
+    padding: 1rem 1rem;
+  }
+  .footer-content-tablet-mobile .accordion-label:hover {
+    cursor: pointer;
+  }
+  .footer-content-tablet-mobile .accordion-content:hover {
+    cursor: pointer;
+  }
+  .footer-content-tablet-mobile label:hover {
+    color: #ffffff;
+    background-color: #000000;
+  }
+  .footer-content-tablet-mobile ul {
+    display: block;
+    width: 100%;
+  }
+  .footer-content-tablet-mobile ul li {
+    white-space: wrap;
+  }
+  .footer-content-tablet-mobile ul a {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  .footer-content-tablet-mobile ul a:hover {
+    text-decoration: underline;
+  }
+  .footer-content-tablet-mobile .accordion-label::after {
+    content: "▾";
+    display: flex;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    right: 1rem;
+    font-size: 0.875rem;
+    transition: transform 0.3s;
+  }
+  .footer-content-tablet-mobile .accordion-content {
+    display: none;
+  }
+  .footer-content-tablet-mobile .accordion-input {
+    display: none;
+  }
+  .footer-content-tablet-mobile .accordion-input:checked ~ .accordion-content {
+    display: block;
+  }
+  .footer-content-tablet-mobile .accordion-input:checked ~ .accordion-label::after {
+    transform: translateY(-50%) rotate(0.5turn);
+  }
+  .copyright {
+    padding: 1rem 1rem;
+  }
+}
+@media only screen and (max-width: 51.5625em) {
+  .site-footer {
+    top: 165.3rem;
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (max-width: 42.5em) {
+  .site-footer {
+    top: 152.8rem;
+  }
+}
+@media only screen and (max-width: 34.375em) {
+  .site-footer {
+    top: 140.3rem;
+  }
+}
+@media only screen and (max-width: 26.25em) {
+  .site-footer {
+    top: 127.8rem;
+  }
+}
 .hero-image {
   position: absolute;
   left: 0;
@@ -262,31 +417,32 @@ a {
 }
 .hero-image.first {
   top: 2.8rem;
-  background: url("../images/hero-image-1.avif") no-repeat;
+  background: url("../images/hero-image-men-01.avif") no-repeat;
   background-size: 1450px;
   background-position-x: 50%;
   background-position-y: 50%;
 }
 .hero-image.second {
   top: 49.675rem;
-  background: url("../images/hero-image-2.avif") no-repeat;
+  background: url("../images/hero-image-women-01.avif") no-repeat;
   background-size: 1450px;
   background-position-x: 50%;
   background-position-y: 60%;
 }
 .hero-image.third {
   top: 96.55rem;
-  background: url("../images/hero-image-3.avif") no-repeat;
+  background: url("../images/hero-image-kids-01.avif") no-repeat;
   background-size: 1450px;
   background-position-x: 50%;
   background-position-y: 55%;
 }
 .hero-image.fourth {
   top: 143.425rem;
-  background: url("../images/hero-image-4.avif") no-repeat;
-  background-size: 1450px;
+  background: url("../images/hero-image-explore-01.avif") no-repeat;
+  background-size: 1550px;
   background-position-x: 50%;
   background-position-y: 50%;
+  background-color: #010101;
 }
 
 .hero-content {
@@ -301,7 +457,7 @@ a {
 }
 .hero-content h1 {
   font-family: "open-sans-condensed-bold";
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   line-height: 1.8rem;
   color: #000000;
   -webkit-user-select: none;
@@ -309,7 +465,7 @@ a {
           user-select: none;
 }
 .hero-content a {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   line-height: 5rem;
   padding: 0.5rem 2rem;
   color: #000000;
@@ -326,6 +482,10 @@ a {
   background-color: #000000;
   border: 1px solid #000000;
   border-radius: 0.2rem;
+}
+
+.hero-content .heading-explore {
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 68.75em) {
@@ -345,7 +505,7 @@ a {
   }
   .hero-image.fourth {
     top: 134.05rem;
-    background-size: 1200px;
+    background-size: 1400px;
   }
 }
 @media only screen and (max-width: 51.5625em) {
@@ -365,7 +525,7 @@ a {
   }
   .hero-image.fourth {
     top: 124.675rem;
-    background-size: 1000px;
+    background-size: 1300px;
   }
 }
 @media only screen and (max-width: 42.5em) {
@@ -385,7 +545,8 @@ a {
   }
   .hero-image.fourth {
     top: 115.3rem;
-    background-size: 800px;
+    background-size: 1100px;
+    background-position-y: 100%;
   }
 }
 @media only screen and (max-width: 34.375em) {
@@ -405,7 +566,7 @@ a {
   }
   .hero-image.fourth {
     top: 105.925rem;
-    background-size: 600px;
+    background-size: 1100px;
   }
 }
 @media only screen and (max-width: 26.25em) {
@@ -428,8 +589,8 @@ a {
   }
   .hero-image.fourth {
     top: 96.55rem;
-    background-size: 450px;
-    background-position-y: -20%;
+    background-size: 1000px;
+    background-position-y: 100%;
   }
 }
 body,
