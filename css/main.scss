@@ -1,18 +1,18 @@
-//---- IMPORTS ----
+//---- importy ----
 
 @import "scss/_variables.scss";
 @import "scss/_site-header.scss";
 @import "scss/_site-footer.scss";
 @import "scss/_homepage.scss";
 
-//---- GLOBAL SETTINGS ----
+//---- globálne nastavenia ----
 
 body,
 html {
   box-sizing: border-box;
 
   font-family: "open-sans-regular";
-  font-size: 1rem;
+  font-size: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -27,7 +27,7 @@ img {
   height: auto;
 }
 
-//---- TYPOGRAPHY ----
+//---- typografia ----
 
 @font-face {
   font-family: "open-sans-regular";

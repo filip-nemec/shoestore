@@ -83,7 +83,8 @@
   color: $secondary-color;
 }
 
-//1100px
+//---- media query pre 1100px a menej ----
+
 @media only screen and (max-width: 68.75em) {
   .hero-image {
     height: 43.75rem; //700px
@@ -109,7 +110,8 @@
   }
 }
 
-//825px
+//---- media query pre 825px a menej ----
+
 @media only screen and (max-width: 51.5625em) {
   .hero-image {
     height: 40.625rem; //650px
@@ -135,7 +137,8 @@
   }
 }
 
-//680px
+//---- media query pre 680px a menej ----
+
 @media only screen and (max-width: 42.5em) {
   .hero-image {
     height: 37.5rem; //600px
@@ -162,7 +165,8 @@
   }
 }
 
-//550px
+//---- media query pre 550px a menej ----
+
 @media only screen and (max-width: 34.375em) {
   .hero-image {
     height: 34.375rem; //550px
@@ -188,7 +192,8 @@
   }
 }
 
-//420px
+//---- media query pre 420px a menej ----
+
 @media only screen and (max-width: 26.25em) {
   .hero-image {
     height: 31.25rem; //500px

@@ -37,8 +37,6 @@
     flex-direction: column;
     white-space: wrap;
     line-height: 1rem;
-  }
-  li {
     padding: 0 0 0.8rem 0;
   }
 
@@ -59,7 +57,8 @@
   display: none;
 }
 
-//1100px
+//---- media query pre 1100px a menej ----
+
 @media only screen and (max-width: 68.75em) {
   .site-footer {
     top: 4 * 43.75rem + 2.8rem;
@@ -89,8 +88,6 @@
       position: relative;
       text-transform: uppercase;
       padding: 1rem 1rem;
-      //border-top: 1px solid $main-color;
-      //border-bottom: 1px solid $main-color;
 
       &:hover {
         cursor: pointer;
@@ -101,20 +98,18 @@
       cursor: pointer;
     }
 
-    label:hover {
-      color: $secondary-color;
-      background-color: $main-color;
-    }
-
     ul {
       display: block;
       width: 100%;
 
       li {
         white-space: wrap;
+        &:last-child {
+          margin-bottom: 0.5rem;
+        }
       }
 
-      a {
+      li a {
         width: 100%;
         padding: 1rem 1rem;
         &:hover {
@@ -124,20 +119,22 @@
     }
 
     .accordion-label::after {
-      content: "▾";
-      display: flex;
+      content: "__";
+      display: block;
       position: absolute;
-      top: 50%;
+      top: 55%;
+      color: rgba(255, 255, 255, 0);
+
       transform: translateY(-50%);
+      background: url("../../images/icons/other/arrow-down-300.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
       right: 1rem;
-      font-size: 0.875rem;
+      font-size: 1.6rem;
       transition: transform 0.3s;
     }
 
-    .accordion-content {
-      display: none;
-    }
-
+    .accordion-content,
     .accordion-input {
       display: none;
     }
@@ -151,12 +148,25 @@
     }
   }
 
-  .copyright {
-    padding: 1rem 1rem;
+  div.footer-whitespace {
+    height: 2.5rem;
   }
+
+  /* 
+  // skryté
+  block-size: 0;
+  transition-property: block-size, content-visibility;
+  transition-duration: 0.5s;
+  transition-behavior: allow-discrete;
+
+  // viditelné
+  block-size: auto;
+  block-size: calc-size(auto);
+  */
 }
 
-//825px
+//---- media query pre 825px a menej ----
+
 @media only screen and (max-width: 51.5625em) {
   .site-footer {
     top: 4 * 40.625rem + 2.8rem;
@@ -164,21 +174,24 @@
   }
 }
 
-//680px
+//---- media query pre 680px a menej ----
+
 @media only screen and (max-width: 42.5em) {
   .site-footer {
     top: 4 * 37.5rem + 2.8rem;
   }
 }
 
-//550px
+//---- media query pre 550px a menej ----
+
 @media only screen and (max-width: 34.375em) {
   .site-footer {
     top: 4 * 34.375rem + 2.8rem;
   }
 }
 
-//420px
+//---- media query pre 420px a menej ----
+
 @media only screen and (max-width: 26.25em) {
   .site-footer {
     top: 4 * 31.25rem + 2.8rem;
