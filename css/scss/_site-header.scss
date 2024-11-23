@@ -107,7 +107,7 @@ a {
   display: none;
 }
 
-//---- media query pre 825px a menej ----
+//---- MEDIA QUERY PRE 825px A MENEJ ----
 
 @media only screen and (max-width: 51.5625em) {
   .nav-icon.menu-search {
@@ -153,15 +153,17 @@ a {
 
       h2 {
         position: absolute;
-        font-size: 0.875rem;
+        //font-size: 0.875rem;
         top: 1rem;
         left: 45%;
       }
 
       .nav-icon.close {
-        margin: 0.4rem 0.6rem;
-        min-height: 1.8rem;
-        min-width: 1.8rem;
+        position: relative;
+        margin: 0.5rem 0.6rem;
+
+        min-height: 1.7rem;
+        min-width: 1.7rem;
       }
     }
 
@@ -180,7 +182,7 @@ a {
       background-color: $secondary-color;
 
       font-family: "open-sans-regular";
-      font-size: 0.875rem;
+      //font-size: 0.875rem;
       text-transform: uppercase;
       border-bottom: 1px solid black;
       border-radius: 0px;
@@ -194,7 +196,7 @@ a {
     }
 
     a {
-      font-size: 0.875rem;
+      //font-size: 0.875rem;
       padding: 1rem 1rem;
       margin-right: 0rem;
       width: 100%;
@@ -274,15 +276,27 @@ a {
     a {
       font-size: 0;
       border: 0px;
+      margin: 0;
+      padding: 0;
 
       svg {
         min-height: 1.75rem;
         min-width: 1.75rem;
+
+        &.nav-icon.shopping-cart {
+          margin-left: 0.5rem;
+        }
       }
     }
 
     .nav-icon.search {
       display: none;
+    }
+  }
+
+  .main-nav {
+    svg.nav-icon.menu-search {
+      margin-right: 0.5rem;
     }
   }
 

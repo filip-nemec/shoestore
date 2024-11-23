@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .main-nav {
   width: 100%;
   position: fixed;
@@ -138,14 +137,14 @@ a {
   }
   .primary-menu label h2 {
     position: absolute;
-    font-size: 0.875rem;
     top: 1rem;
     left: 45%;
   }
   .primary-menu label .nav-icon.close {
-    margin: 0.4rem 0.6rem;
-    min-height: 1.8rem;
-    min-width: 1.8rem;
+    position: relative;
+    margin: 0.5rem 0.6rem;
+    min-height: 1.7rem;
+    min-width: 1.7rem;
   }
   .primary-menu .nav-icon.search {
     display: block;
@@ -160,7 +159,6 @@ a {
     color: #757575;
     background-color: #ffffff;
     font-family: "open-sans-regular";
-    font-size: 0.875rem;
     text-transform: uppercase;
     border-bottom: 1px solid black;
     border-radius: 0px;
@@ -172,7 +170,6 @@ a {
     -webkit-appearance: none;
   }
   .primary-menu a {
-    font-size: 0.875rem;
     padding: 1rem 1rem;
     margin-right: 0rem;
     width: 100%;
@@ -236,13 +233,21 @@ a {
   .secondary-menu a {
     font-size: 0;
     border: 0px;
+    margin: 0;
+    padding: 0;
   }
   .secondary-menu a svg {
     min-height: 1.75rem;
     min-width: 1.75rem;
   }
+  .secondary-menu a svg.nav-icon.shopping-cart {
+    margin-left: 0.5rem;
+  }
   .secondary-menu .nav-icon.search {
     display: none;
+  }
+  .main-nav svg.nav-icon.menu-search {
+    margin-right: 0.5rem;
   }
   .nav-icon.saved-items,
   .nav-icon.account {
@@ -250,7 +255,7 @@ a {
   }
 }
 .site-footer {
-  position: relative;
+  position: absolute;
   z-index: -10;
   left: 0;
   top: 190.3rem;
@@ -267,7 +272,7 @@ a {
 }
 .footer-content-desktop div {
   width: 16.66%;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .footer-content-desktop .box-1,
 .footer-content-desktop .box-2,
@@ -278,7 +283,7 @@ a {
 }
 .footer-content-desktop h3 {
   text-transform: uppercase;
-  padding: 0.5rem 0 1.5rem 0;
+  padding: 0 0 1.5rem 0;
 }
 .footer-content-desktop ul,
 .footer-content-desktop li {
@@ -304,11 +309,11 @@ a {
 }
 
 @media only screen and (max-width: 68.75em) {
-  .site-footer {
-    top: 177.8rem;
-  }
   .footer-content-desktop {
     display: none;
+  }
+  .site-footer {
+    top: 177.8rem;
   }
   .footer-content-tablet-mobile {
     display: flex;
@@ -329,6 +334,7 @@ a {
     position: relative;
     text-transform: uppercase;
     padding: 1rem 1rem;
+    margin: 0;
   }
   .footer-content-tablet-mobile .accordion-label:hover {
     cursor: pointer;
@@ -367,9 +373,16 @@ a {
     font-size: 1.6rem;
     transition: transform 0.3s;
   }
-  .footer-content-tablet-mobile .accordion-content,
-  .footer-content-tablet-mobile .accordion-input {
+  .footer-content-tablet-mobile input[type=checkbox] {
     display: none;
+  }
+  .footer-content-tablet-mobile .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s;
+  }
+  .footer-content-tablet-mobile .accordion-content li {
+    padding-left: 0.8rem;
   }
   .footer-content-tablet-mobile .accordion-input:checked ~ .accordion-content {
     display: block;
@@ -377,25 +390,16 @@ a {
   .footer-content-tablet-mobile .accordion-input:checked ~ .accordion-label::after {
     transform: translateY(-50%) rotate(0.5turn);
   }
+  .footer-content-tablet-mobile .accordion-input[type=checkbox]:checked + label + .accordion-content {
+    max-height: 500px;
+  }
   div.footer-whitespace {
     height: 2.5rem;
   }
-  /* 
-  // skryté
-  block-size: 0;
-  transition-property: block-size, content-visibility;
-  transition-duration: 0.5s;
-  transition-behavior: allow-discrete;
-
-  // viditelné
-  block-size: auto;
-  block-size: calc-size(auto);
-  */
 }
 @media only screen and (max-width: 51.5625em) {
   .site-footer {
     top: 165.3rem;
-    font-size: 0.875rem;
   }
 }
 @media only screen and (max-width: 42.5em) {

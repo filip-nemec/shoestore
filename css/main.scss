@@ -1,11 +1,11 @@
-//---- importy ----
+//---- IMPORTY ----
 
 @import "scss/_variables.scss";
 @import "scss/_site-header.scss";
 @import "scss/_site-footer.scss";
 @import "scss/_homepage.scss";
 
-//---- globálne nastavenia ----
+//---- GLOBÁLNE NASTAVENIA WEBU ----
 
 body,
 html {
@@ -27,7 +27,7 @@ img {
   height: auto;
 }
 
-//---- typografia ----
+//---- TYPOGRAFIA ----
 
 @font-face {
   font-family: "open-sans-regular";
