@@ -10,7 +10,7 @@
 }
 
 header {
-  min-height: 2.8rem;
+  min-height: $header-height;
   max-width: 131.25rem; //2100px
   display: flex;
   padding: 0;

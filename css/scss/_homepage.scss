@@ -1,14 +1,14 @@
 .hero-image {
   position: absolute;
   left: 0;
-  height: 46.875rem; //750px
+  height: $hero-image-height-01; // 750px
   width: 100%;
   z-index: -1;
   background-color: $secondary-color;
   border-bottom: 1px solid $border-color-01;
 
   &.first {
-    top: 2.8rem;
+    top: $header-height;
     background: url("../images/hero-image-men-01.avif") no-repeat;
     background-size: 1450px;
     background-position-x: 50%;
@@ -16,24 +16,42 @@
   }
 
   &.second {
-    top: 46.875rem + 2.8rem;
-    background: url("../images/hero-image-women-01.avif") no-repeat;
-    background-size: 1450px;
+    top: $hero-image-height-01 + $header-height;
+    background: url("../images/hero-image-explore-01.jpeg") no-repeat;
+    background-size: 1700px;
     background-position-x: 50%;
-    background-position-y: 60%;
+    background-position-y: 80%;
+    background-color: #cacaca;
   }
 
   &.third {
-    top: 2 * 46.875rem + 2.8rem;
-    background: url("../images/hero-image-kids-01.avif") no-repeat;
-    background-size: 1450px;
+    top: 2 * $hero-image-height-01 + $header-height;
+    background: url("../images/hero-image-women-01.jpg") no-repeat;
+    background-size: 1550px;
     background-position-x: 50%;
     background-position-y: 55%;
   }
 
   &.fourth {
-    top: 3 * 46.875rem + 2.8rem;
-    background: url("../images/hero-image-explore-01.avif") no-repeat;
+    top: 3 * $hero-image-height-01 + $header-height;
+    background: url("../images/hero-image-explore-02.webp") no-repeat;
+    background-size: 1500px;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-color: #97abac;
+  }
+
+  &.fifth {
+    top: 4 * $hero-image-height-01 + $header-height;
+    background: url("../images/hero-image-kids-01.avif") no-repeat;
+    background-size: 1450px;
+    background-position-x: 50%;
+    background-position-y: 50%;
+  }
+
+  &.sixth {
+    top: 5 * $hero-image-height-01 + $header-height;
+    background: url("../images/hero-image-explore-03.avif") no-repeat;
     background-size: 1550px;
     background-position-x: 50%;
     background-position-y: 50%;
@@ -81,30 +99,41 @@
 
 .hero-content .heading-explore {
   color: $secondary-color;
+  //text-shadow: 1px 1px 10px rgb(101, 101, 101);
 }
 
-//----MEDIA QUERY PRE 1100px A MENEJ ----
+//---- MEDIA QUERY PRE 1100px A MENEJ ----
 
 @media only screen and (max-width: 68.75em) {
   .hero-image {
-    height: 43.75rem; //700px
+    height: $hero-image-height-02; // 700px
 
     &.first {
       background-size: 1200px;
     }
 
     &.second {
-      top: 43.75rem + 2.8rem;
-      background-size: 1200px;
+      top: $hero-image-height-02 + $header-height;
+      background-size: 1700px;
     }
 
     &.third {
-      top: 2 * 43.75rem + 2.8rem;
+      top: 2 * $hero-image-height-02 + $header-height;
       background-size: 1200px;
     }
 
     &.fourth {
-      top: 3 * 43.75rem + 2.8rem;
+      top: 3 * $hero-image-height-02 + $header-height;
+      background-size: 1400px;
+    }
+
+    &.fifth {
+      top: 4 * $hero-image-height-02 + $header-height;
+      background-size: 1200px;
+    }
+
+    &.sixth {
+      top: 5 * $hero-image-height-02 + $header-height;
       background-size: 1400px;
     }
   }
@@ -114,24 +143,35 @@
 
 @media only screen and (max-width: 51.5625em) {
   .hero-image {
-    height: 40.625rem; //650px
+    height: $hero-image-height-03; // 650px
 
     &.first {
       background-size: 1000px;
     }
 
     &.second {
-      top: 40.625rem + 2.8rem;
-      background-size: 1000px;
+      top: $hero-image-height-03 + $header-height;
+      background-size: 1400px;
+      background-position-y: 100%;
     }
 
     &.third {
-      top: 2 * 40.625rem + 2.8rem;
+      top: 2 * $hero-image-height-03 + $header-height;
       background-size: 1000px;
     }
 
     &.fourth {
-      top: 3 * 40.625rem + 2.8rem;
+      top: 3 * $hero-image-height-03 + $header-height;
+      background-size: 1300px;
+    }
+
+    &.fifth {
+      top: 4 * $hero-image-height-03 + $header-height;
+      background-size: 1000px;
+    }
+
+    &.sixth {
+      top: 5 * $hero-image-height-03 + $header-height;
       background-size: 1300px;
     }
   }
@@ -141,26 +181,36 @@
 
 @media only screen and (max-width: 42.5em) {
   .hero-image {
-    height: 37.5rem; //600px
+    height: $hero-image-height-04; // 600px
 
     &.first {
       background-size: 800px;
     }
 
     &.second {
-      top: 37.5rem + 2.8rem;
-      background-size: 800px;
+      top: $hero-image-height-04 + $header-height;
+      background-size: 1150px;
+      background-position-y: -80%;
     }
 
     &.third {
-      top: 2 * 37.5rem + 2.8rem;
+      top: 2 * $hero-image-height-04 + $header-height;
       background-size: 800px;
     }
 
     &.fourth {
-      top: 3 * 37.5rem + 2.8rem;
-      background-size: 1100px;
-      background-position-y: 100%;
+      top: 3 * $hero-image-height-04 + $header-height;
+      background-size: 1200px;
+    }
+
+    &.fifth {
+      top: 4 * $hero-image-height-04 + $header-height;
+      background-size: 800px;
+    }
+
+    &.sixth {
+      top: 5 * $hero-image-height-04 + $header-height;
+      background-size: 1200px;
     }
   }
 }
@@ -169,24 +219,35 @@
 
 @media only screen and (max-width: 34.375em) {
   .hero-image {
-    height: 34.375rem; //550px
+    height: $hero-image-height-05; // 550px
 
     &.first {
       background-size: 600px;
     }
 
     &.second {
-      top: 34.375rem + 2.8rem;
-      background-size: 600px;
+      top: $hero-image-height-05 + $header-height;
+      background-size: 1000px;
+      background-position-y: -20%;
     }
 
     &.third {
-      top: 2 * 34.375rem + 2.8rem;
+      top: 2 * $hero-image-height-05 + $header-height;
       background-size: 600px;
     }
 
     &.fourth {
-      top: 3 * 34.375rem + 2.8rem;
+      top: 3 * $hero-image-height-05 + $header-height;
+      background-size: 1100px;
+    }
+
+    &.fifth {
+      top: 4 * $hero-image-height-05 + $header-height;
+      background-size: 600px;
+    }
+
+    &.sixth {
+      top: 5 * $hero-image-height-05 + $header-height;
       background-size: 1100px;
     }
   }
@@ -196,29 +257,36 @@
 
 @media only screen and (max-width: 26.25em) {
   .hero-image {
-    height: 31.25rem; //500px
+    height: $hero-image-height-06; // 500px
 
     &.first {
       background-size: 450px;
-      background-position-y: 10%;
     }
 
     &.second {
-      top: 31.25rem + 2.8rem;
-      background-size: 450px;
-      background-position-y: -20%;
+      top: $hero-image-height-06 + $header-height;
+      background-size: 900px;
+      background-position-y: -30%;
     }
 
     &.third {
-      top: 2 * 31.25rem + 2.8rem;
+      top: 2 * $hero-image-height-06 + $header-height;
       background-size: 450px;
-      background-position-y: -20%;
     }
 
     &.fourth {
-      top: 3 * 31.25rem + 2.8rem;
+      top: 3 * $hero-image-height-06 + $header-height;
       background-size: 1000px;
-      background-position-y: 100%;
+    }
+
+    &.fifth {
+      top: 4 * $hero-image-height-06 + $header-height;
+      background-size: 450px;
+    }
+
+    &.sixth {
+      top: 5 * $hero-image-height-06 + $header-height;
+      background-size: 1000px;
     }
   }
 }

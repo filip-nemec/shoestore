@@ -1,3 +1,5 @@
+//---- FARBY ----
+
 $main-color: #000000;
 $secondary-color: #ffffff;
 
@@ -5,3 +7,28 @@ $border-color-01: #000000;
 $border-color-02: #ffffff;
 
 $search-bar-color: #757575;
+
+//---- OBJEKTY ----
+
+// výška hlavného menu webu
+$header-height: 2.8rem;
+
+//---- VÝŠKA HERO IMAGE SEKCIE ----
+
+// pre desktop, šírka viac ako 1100px
+$hero-image-height-01: 46.875rem; // 750px
+
+// pre media query 1100px a menej
+$hero-image-height-02: 43.75rem; // 700px
+
+// pre media query 825px a menej
+$hero-image-height-03: 40.625rem; // 650px
+
+// pre media query 680px a menej
+$hero-image-height-04: 37.5rem; // 600px
+
+// pre media query 550px a menej
+$hero-image-height-05: 34.375rem; // 550px
+
+// pre media query 420px a menej
+$hero-image-height-06: 31.25rem; // 500px

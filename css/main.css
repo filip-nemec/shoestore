@@ -258,7 +258,7 @@ a {
   position: absolute;
   z-index: -10;
   left: 0;
-  top: 190.3rem;
+  top: 284.05rem;
   width: 100%;
   font-size: 0.75rem;
   background-color: #ffffff;
@@ -313,7 +313,7 @@ a {
     display: none;
   }
   .site-footer {
-    top: 177.8rem;
+    top: 265.3rem;
   }
   .footer-content-tablet-mobile {
     display: flex;
@@ -399,22 +399,22 @@ a {
 }
 @media only screen and (max-width: 51.5625em) {
   .site-footer {
-    top: 165.3rem;
+    top: 246.55rem;
   }
 }
 @media only screen and (max-width: 42.5em) {
   .site-footer {
-    top: 152.8rem;
+    top: 227.8rem;
   }
 }
 @media only screen and (max-width: 34.375em) {
   .site-footer {
-    top: 140.3rem;
+    top: 209.05rem;
   }
 }
 @media only screen and (max-width: 26.25em) {
   .site-footer {
-    top: 127.8rem;
+    top: 190.3rem;
   }
 }
 .hero-image {
@@ -435,21 +435,37 @@ a {
 }
 .hero-image.second {
   top: 49.675rem;
-  background: url("../images/hero-image-women-01.avif") no-repeat;
-  background-size: 1450px;
+  background: url("../images/hero-image-explore-01.jpeg") no-repeat;
+  background-size: 1700px;
   background-position-x: 50%;
-  background-position-y: 60%;
+  background-position-y: 80%;
+  background-color: #cacaca;
 }
 .hero-image.third {
   top: 96.55rem;
-  background: url("../images/hero-image-kids-01.avif") no-repeat;
-  background-size: 1450px;
+  background: url("../images/hero-image-women-01.jpg") no-repeat;
+  background-size: 1550px;
   background-position-x: 50%;
   background-position-y: 55%;
 }
 .hero-image.fourth {
   top: 143.425rem;
-  background: url("../images/hero-image-explore-01.avif") no-repeat;
+  background: url("../images/hero-image-explore-02.webp") no-repeat;
+  background-size: 1500px;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-color: #97abac;
+}
+.hero-image.fifth {
+  top: 190.3rem;
+  background: url("../images/hero-image-kids-01.avif") no-repeat;
+  background-size: 1450px;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+.hero-image.sixth {
+  top: 237.175rem;
+  background: url("../images/hero-image-explore-03.avif") no-repeat;
   background-size: 1550px;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -508,7 +524,7 @@ a {
   }
   .hero-image.second {
     top: 46.55rem;
-    background-size: 1200px;
+    background-size: 1700px;
   }
   .hero-image.third {
     top: 90.3rem;
@@ -516,6 +532,14 @@ a {
   }
   .hero-image.fourth {
     top: 134.05rem;
+    background-size: 1400px;
+  }
+  .hero-image.fifth {
+    top: 177.8rem;
+    background-size: 1200px;
+  }
+  .hero-image.sixth {
+    top: 221.55rem;
     background-size: 1400px;
   }
 }
@@ -528,7 +552,8 @@ a {
   }
   .hero-image.second {
     top: 43.425rem;
-    background-size: 1000px;
+    background-size: 1400px;
+    background-position-y: 100%;
   }
   .hero-image.third {
     top: 84.05rem;
@@ -536,6 +561,14 @@ a {
   }
   .hero-image.fourth {
     top: 124.675rem;
+    background-size: 1300px;
+  }
+  .hero-image.fifth {
+    top: 165.3rem;
+    background-size: 1000px;
+  }
+  .hero-image.sixth {
+    top: 205.925rem;
     background-size: 1300px;
   }
 }
@@ -548,7 +581,8 @@ a {
   }
   .hero-image.second {
     top: 40.3rem;
-    background-size: 800px;
+    background-size: 1150px;
+    background-position-y: -80%;
   }
   .hero-image.third {
     top: 77.8rem;
@@ -556,8 +590,15 @@ a {
   }
   .hero-image.fourth {
     top: 115.3rem;
-    background-size: 1100px;
-    background-position-y: 100%;
+    background-size: 1200px;
+  }
+  .hero-image.fifth {
+    top: 152.8rem;
+    background-size: 800px;
+  }
+  .hero-image.sixth {
+    top: 190.3rem;
+    background-size: 1200px;
   }
 }
 @media only screen and (max-width: 34.375em) {
@@ -569,7 +610,8 @@ a {
   }
   .hero-image.second {
     top: 37.175rem;
-    background-size: 600px;
+    background-size: 1000px;
+    background-position-y: -20%;
   }
   .hero-image.third {
     top: 71.55rem;
@@ -579,6 +621,14 @@ a {
     top: 105.925rem;
     background-size: 1100px;
   }
+  .hero-image.fifth {
+    top: 140.3rem;
+    background-size: 600px;
+  }
+  .hero-image.sixth {
+    top: 174.675rem;
+    background-size: 1100px;
+  }
 }
 @media only screen and (max-width: 26.25em) {
   .hero-image {
@@ -586,22 +636,27 @@ a {
   }
   .hero-image.first {
     background-size: 450px;
-    background-position-y: 10%;
   }
   .hero-image.second {
     top: 34.05rem;
-    background-size: 450px;
-    background-position-y: -20%;
+    background-size: 900px;
+    background-position-y: -30%;
   }
   .hero-image.third {
     top: 65.3rem;
     background-size: 450px;
-    background-position-y: -20%;
   }
   .hero-image.fourth {
     top: 96.55rem;
     background-size: 1000px;
-    background-position-y: 100%;
+  }
+  .hero-image.fifth {
+    top: 127.8rem;
+    background-size: 450px;
+  }
+  .hero-image.sixth {
+    top: 159.05rem;
+    background-size: 1000px;
   }
 }
 body,
