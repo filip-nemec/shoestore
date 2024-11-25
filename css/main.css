@@ -88,7 +88,7 @@ a {
   position: absolute;
   left: 50%;
   top: 30%;
-  height: 1.1rem;
+  height: 1.22rem;
   transform: translateX(-50%);
 }
 
@@ -444,7 +444,7 @@ a {
 .hero-image.third {
   top: 96.55rem;
   background: url("../images/hero-image-women-01.jpg") no-repeat;
-  background-size: 1550px;
+  background-size: 1500px;
   background-position-x: 50%;
   background-position-y: 55%;
 }
