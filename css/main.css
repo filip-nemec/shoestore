@@ -88,7 +88,7 @@ a {
   position: absolute;
   left: 50%;
   top: 30%;
-  height: 1.22rem;
+  height: 1.1rem;
   transform: translateX(-50%);
 }
 
@@ -425,6 +425,7 @@ a {
   z-index: -1;
   background-color: #ffffff;
   border-bottom: 1px solid #000000;
+  background-size: cover;
 }
 .hero-image.first {
   top: 2.8rem;
@@ -511,7 +512,7 @@ a {
   border-radius: 0.2rem;
 }
 
-.hero-content .heading-explore {
+.hero-content .white-heading {
   color: #ffffff;
 }
 

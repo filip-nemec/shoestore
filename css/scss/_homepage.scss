@@ -7,6 +7,8 @@
   background-color: $secondary-color;
   border-bottom: 1px solid $border-color-01;
 
+  background-size: cover;
+
   &.first {
     top: $header-height;
     background: url("../images/hero-image-men-01.avif") no-repeat;
@@ -97,7 +99,7 @@
   }
 }
 
-.hero-content .heading-explore {
+.hero-content .white-heading {
   color: $secondary-color;
   //text-shadow: 1px 1px 10px rgb(101, 101, 101);
 }
