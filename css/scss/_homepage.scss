@@ -36,10 +36,11 @@
 
   &.fourth {
     top: 3 * $hero-image-height-01 + $header-height;
-    background: url("../images/hero-4-E.webp") no-repeat;
-    background-size: 1500px;
+    background: url("../images/hero-4.webp") no-repeat;
+    background-size: 520px;
     background-position-x: 50%;
-    background-color: #050407;
+    background-position-y: 250%;
+    background-color: #070709;
   }
 }
 
@@ -121,7 +122,8 @@
 
     &.fourth {
       top: 3 * $hero-image-height-02 + $header-height;
-      background-size: 1400px;
+      background-size: 450px;
+      background-position-y: -100%;
     }
   }
 }
@@ -150,7 +152,7 @@
 
     &.fourth {
       top: 3 * $hero-image-height-03 + $header-height;
-      background-size: 1300px;
+      background-size: 420px;
     }
   }
 }
@@ -179,7 +181,8 @@
 
     &.fourth {
       top: 3 * $hero-image-height-04 + $header-height;
-      background-size: 1200px;
+      background-size: 390px;
+      background-position-y: -350%;
     }
   }
 }
@@ -208,7 +211,8 @@
 
     &.fourth {
       top: 3 * $hero-image-height-05 + $header-height;
-      background-size: 1100px;
+      background-size: 350px;
+      background-position-y: -100%;
     }
   }
 }
@@ -237,7 +241,8 @@
 
     &.fourth {
       top: 3 * $hero-image-height-06 + $header-height;
-      background-size: 1000px;
+      background-size: 300px;
+      background-position-y: -50%;
     }
   }
 }

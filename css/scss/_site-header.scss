@@ -282,16 +282,11 @@ a {
 
       svg {
         min-height: 1.75rem;
-        min-width: 1.75rem;
 
         &.nav-icon.shopping-cart {
           margin-left: 0.5rem;
         }
       }
-    }
-
-    .nav-icon.search {
-      display: none;
     }
   }
 
@@ -302,7 +297,8 @@ a {
   }
 
   .nav-icon.saved-items,
-  .nav-icon.account {
+  .nav-icon.account,
+  .secondary-menu .nav-icon.search {
     display: none;
   }
 }

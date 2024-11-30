@@ -239,19 +239,16 @@ a {
   }
   .secondary-menu a svg {
     min-height: 1.75rem;
-    min-width: 1.75rem;
   }
   .secondary-menu a svg.nav-icon.shopping-cart {
     margin-left: 0.5rem;
-  }
-  .secondary-menu .nav-icon.search {
-    display: none;
   }
   .main-nav svg.nav-icon.menu-search {
     margin-right: 0.5rem;
   }
   .nav-icon.saved-items,
-  .nav-icon.account {
+  .nav-icon.account,
+  .secondary-menu .nav-icon.search {
     display: none;
   }
 }
@@ -453,10 +450,11 @@ a {
 }
 .hero-image.fourth {
   top: 143.425rem;
-  background: url("../images/hero-4-E.webp") no-repeat;
-  background-size: 1500px;
+  background: url("../images/hero-4.webp") no-repeat;
+  background-size: 520px;
   background-position-x: 50%;
-  background-color: #050407;
+  background-position-y: 250%;
+  background-color: #070709;
 }
 
 .hero-content {
@@ -530,7 +528,8 @@ a {
   }
   .hero-image.fourth {
     top: 134.05rem;
-    background-size: 1400px;
+    background-size: 450px;
+    background-position-y: -100%;
   }
 }
 @media only screen and (max-width: 51.5625em) {
@@ -552,7 +551,7 @@ a {
   }
   .hero-image.fourth {
     top: 124.675rem;
-    background-size: 1300px;
+    background-size: 420px;
   }
 }
 @media only screen and (max-width: 42.5em) {
@@ -574,7 +573,8 @@ a {
   }
   .hero-image.fourth {
     top: 115.3rem;
-    background-size: 1200px;
+    background-size: 390px;
+    background-position-y: -350%;
   }
 }
 @media only screen and (max-width: 34.375em) {
@@ -596,7 +596,8 @@ a {
   }
   .hero-image.fourth {
     top: 105.925rem;
-    background-size: 1100px;
+    background-size: 350px;
+    background-position-y: -100%;
   }
 }
 @media only screen and (max-width: 26.25em) {
@@ -618,7 +619,8 @@ a {
   }
   .hero-image.fourth {
     top: 96.55rem;
-    background-size: 1000px;
+    background-size: 300px;
+    background-position-y: -50%;
   }
 }
 @media only screen and (max-width: 21.25em) {
