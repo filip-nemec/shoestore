@@ -7,57 +7,39 @@
   background-color: $secondary-color;
   border-bottom: 1px solid $border-color-01;
 
-  background-size: cover;
-
   &.first {
     top: $header-height;
-    background: url("../images/hero-image-men-01.avif") no-repeat;
-    background-size: 1450px;
-    background-position-x: 50%;
-    background-position-y: 50%;
-  }
-
-  &.second {
-    top: $hero-image-height-01 + $header-height;
-    background: url("../images/hero-image-explore-01.jpeg") no-repeat;
-    background-size: 1700px;
-    background-position-x: 50%;
-    background-position-y: 80%;
-    background-color: #cacaca;
-  }
-
-  &.third {
-    top: 2 * $hero-image-height-01 + $header-height;
-    background: url("../images/hero-image-women-01.jpg") no-repeat;
-    background-size: 1500px;
-    background-position-x: 50%;
-    background-position-y: 55%;
-  }
-
-  &.fourth {
-    top: 3 * $hero-image-height-01 + $header-height;
-    background: url("../images/hero-image-explore-02.webp") no-repeat;
+    background: url("../images/hero-1.webp") no-repeat;
     background-size: 1500px;
     background-position-x: 50%;
     background-position-y: 50%;
     background-color: #97abac;
   }
 
-  &.fifth {
-    top: 4 * $hero-image-height-01 + $header-height;
-    background: url("../images/hero-image-kids-01.avif") no-repeat;
-    background-size: 1450px;
+  &.second {
+    top: $hero-image-height-01 + $header-height;
+    background: url("../images/hero-2.webp") no-repeat;
+    background-size: 1500px;
     background-position-x: 50%;
-    background-position-y: 50%;
+    background-position-y: 60%;
+    background-color: #000000;
   }
 
-  &.sixth {
-    top: 5 * $hero-image-height-01 + $header-height;
-    background: url("../images/hero-image-explore-03.avif") no-repeat;
-    background-size: 1550px;
+  &.third {
+    top: 2 * $hero-image-height-01 + $header-height;
+    background: url("../images/hero-3.avif") no-repeat;
+    background-size: 1300px;
     background-position-x: 50%;
-    background-position-y: 50%;
-    background-color: #010101;
+    background-position-y: -120%;
+    background-color: #f4f4f4;
+  }
+
+  &.fourth {
+    top: 3 * $hero-image-height-01 + $header-height;
+    background: url("../images/hero-4-E.webp") no-repeat;
+    background-size: 1500px;
+    background-position-x: 50%;
+    background-color: #050407;
   }
 }
 
@@ -81,13 +63,13 @@
 
   a {
     font-size: 0.75rem;
-    line-height: 5rem;
-    padding: 0.5rem 2rem;
+    line-height: 4rem;
+    padding: 0.5rem 1.5rem;
     color: $main-color;
     background-color: $secondary-color;
-    user-select: none;
     border: 1px solid $border-color-01;
     border-radius: 0.2rem;
+    user-select: none;
 
     &:hover {
       cursor: pointer;
@@ -95,13 +77,26 @@
       background-color: $main-color;
       border: 1px solid $border-color-01;
       border-radius: 0.2rem;
+      transition: ease 0.5s;
     }
   }
 }
 
-.hero-content .white-heading {
-  color: $secondary-color;
-  //text-shadow: 1px 1px 10px rgb(101, 101, 101);
+.hero-content {
+  & .white-heading {
+    color: $secondary-color;
+    //text-shadow: 1px 1px 10px rgb(101, 101, 101);
+  }
+  & .white-button {
+    border-color: $secondary-color;
+    &:hover {
+      border: 1px solid $border-color-02;
+    }
+  }
+}
+
+.small-text {
+  text-transform: lowercase;
 }
 
 //---- MEDIA QUERY PRE 1100px A MENEJ ----
@@ -111,12 +106,12 @@
     height: $hero-image-height-02; // 700px
 
     &.first {
-      background-size: 1200px;
+      background-size: 1400px;
     }
 
     &.second {
       top: $hero-image-height-02 + $header-height;
-      background-size: 1700px;
+      background-size: 1400px;
     }
 
     &.third {
@@ -126,16 +121,6 @@
 
     &.fourth {
       top: 3 * $hero-image-height-02 + $header-height;
-      background-size: 1400px;
-    }
-
-    &.fifth {
-      top: 4 * $hero-image-height-02 + $header-height;
-      background-size: 1200px;
-    }
-
-    &.sixth {
-      top: 5 * $hero-image-height-02 + $header-height;
       background-size: 1400px;
     }
   }
@@ -148,32 +133,23 @@
     height: $hero-image-height-03; // 650px
 
     &.first {
-      background-size: 1000px;
+      background-size: 1300px;
     }
 
     &.second {
       top: $hero-image-height-03 + $header-height;
-      background-size: 1400px;
+      background-size: 1300px;
       background-position-y: 100%;
     }
 
     &.third {
       top: 2 * $hero-image-height-03 + $header-height;
       background-size: 1000px;
+      background-position-y: 0%;
     }
 
     &.fourth {
       top: 3 * $hero-image-height-03 + $header-height;
-      background-size: 1300px;
-    }
-
-    &.fifth {
-      top: 4 * $hero-image-height-03 + $header-height;
-      background-size: 1000px;
-    }
-
-    &.sixth {
-      top: 5 * $hero-image-height-03 + $header-height;
       background-size: 1300px;
     }
   }
@@ -186,32 +162,23 @@
     height: $hero-image-height-04; // 600px
 
     &.first {
-      background-size: 800px;
+      background-size: 1200px;
     }
 
     &.second {
       top: $hero-image-height-04 + $header-height;
-      background-size: 1150px;
+      background-size: 1200px;
       background-position-y: -80%;
     }
 
     &.third {
       top: 2 * $hero-image-height-04 + $header-height;
       background-size: 800px;
+      background-position-y: 30%;
     }
 
     &.fourth {
       top: 3 * $hero-image-height-04 + $header-height;
-      background-size: 1200px;
-    }
-
-    &.fifth {
-      top: 4 * $hero-image-height-04 + $header-height;
-      background-size: 800px;
-    }
-
-    &.sixth {
-      top: 5 * $hero-image-height-04 + $header-height;
       background-size: 1200px;
     }
   }
@@ -224,32 +191,23 @@
     height: $hero-image-height-05; // 550px
 
     &.first {
-      background-size: 600px;
+      background-size: 1100px;
     }
 
     &.second {
       top: $hero-image-height-05 + $header-height;
-      background-size: 1000px;
+      background-size: 950px;
       background-position-y: -20%;
     }
 
     &.third {
       top: 2 * $hero-image-height-05 + $header-height;
-      background-size: 600px;
+      background-size: 800px;
+      background-position-y: 20%;
     }
 
     &.fourth {
       top: 3 * $hero-image-height-05 + $header-height;
-      background-size: 1100px;
-    }
-
-    &.fifth {
-      top: 4 * $hero-image-height-05 + $header-height;
-      background-size: 600px;
-    }
-
-    &.sixth {
-      top: 5 * $hero-image-height-05 + $header-height;
       background-size: 1100px;
     }
   }
@@ -262,33 +220,32 @@
     height: $hero-image-height-06; // 500px
 
     &.first {
-      background-size: 450px;
+      background-size: 1000px;
     }
 
     &.second {
       top: $hero-image-height-06 + $header-height;
-      background-size: 900px;
-      background-position-y: -30%;
+      background-size: 750px;
+      background-position-y: 20%;
     }
 
     &.third {
       top: 2 * $hero-image-height-06 + $header-height;
-      background-size: 450px;
+      background-size: 650px;
+      background-position-y: 20%;
     }
 
     &.fourth {
       top: 3 * $hero-image-height-06 + $header-height;
       background-size: 1000px;
     }
+  }
+}
 
-    &.fifth {
-      top: 4 * $hero-image-height-06 + $header-height;
-      background-size: 450px;
-    }
+//---- MEDIA QUERY PRE 340px A MENEJ ----
 
-    &.sixth {
-      top: 5 * $hero-image-height-06 + $header-height;
-      background-size: 1000px;
-    }
+@media only screen and (max-width: 21.25em) {
+  .hero-content a {
+    padding: 0.5rem 1rem;
   }
 }
