@@ -58,7 +58,7 @@
           </div>
         </nav>
 
-        <a class="logo" href="index.html">
+        <a class="logo" href="index.php">
           <img class="site-logo" src="images/prestige-logo.svg" alt="prestige logo" />
         </a>
 
