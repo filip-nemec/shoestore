@@ -2,7 +2,7 @@
   position: absolute;
   z-index: -10;
   left: 0;
-  top: 4 * $hero-image-height-01 + $header-height;
+  top: 4 * $hero-image-height-01 + (2 * $header-height);
   width: 100%;
   font-size: 0.75rem;
   background-color: $secondary-color;
@@ -65,7 +65,7 @@
   }
 
   .site-footer {
-    top: 4 * $hero-image-height-02 + $header-height;
+    top: 4 * $hero-image-height-02 + (2 * $header-height);
   }
 
   .footer-content-tablet-mobile {
@@ -174,7 +174,7 @@
 
 @media only screen and (max-width: 51.5625em) {
   .site-footer {
-    top: 4 * $hero-image-height-03 + $header-height;
+    top: 4 * $hero-image-height-03 + (2 * $header-height);
     //font-size: 0.875rem;
   }
 }
@@ -183,7 +183,7 @@
 
 @media only screen and (max-width: 42.5em) {
   .site-footer {
-    top: 4 * $hero-image-height-04 + $header-height;
+    top: 4 * $hero-image-height-04 + (2 * $header-height);
   }
 }
 
@@ -191,7 +191,7 @@
 
 @media only screen and (max-width: 34.375em) {
   .site-footer {
-    top: 4 * $hero-image-height-05 + $header-height;
+    top: 4 * $hero-image-height-05 + (2 * $header-height);
   }
 }
 
@@ -199,6 +199,6 @@
 
 @media only screen and (max-width: 26.25em) {
   .site-footer {
-    top: 4 * $hero-image-height-06 + $header-height;
+    top: 4 * $hero-image-height-06 + (2 * $header-height);
   }
 }

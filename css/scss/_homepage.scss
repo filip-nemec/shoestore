@@ -1,3 +1,33 @@
+.slider {
+  position: fixed;
+  top: $header-height;
+  height: $header-height;
+  width: 100%;
+  background-color: $secondary-color;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid $main-color;
+  user-select: none;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  p {
+    white-space: nowrap;
+    padding: 0 4rem;
+    animation: scroll 12s linear infinite;
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .hero-image {
   position: absolute;
   left: 0;
@@ -8,7 +38,7 @@
   border-bottom: 1px solid $border-color-01;
 
   &.first {
-    top: $header-height;
+    top: 2 * $header-height;
     background: url("../images/hero-1.webp") no-repeat;
     background-size: 1500px;
     background-position-x: 50%;
@@ -17,7 +47,7 @@
   }
 
   &.second {
-    top: $hero-image-height-01 + $header-height;
+    top: $hero-image-height-01 + (2 * $header-height);
     background: url("../images/hero-2.webp") no-repeat;
     background-size: 1500px;
     background-position-x: 50%;
@@ -26,7 +56,7 @@
   }
 
   &.third {
-    top: 2 * $hero-image-height-01 + $header-height;
+    top: 2 * $hero-image-height-01 + (2 * $header-height);
     background: url("../images/hero-3.avif") no-repeat;
     background-size: 1300px;
     background-position-x: 50%;
@@ -35,7 +65,7 @@
   }
 
   &.fourth {
-    top: 3 * $hero-image-height-01 + $header-height;
+    top: 3 * $hero-image-height-01 + (2 * $header-height);
     background: url("../images/hero-4.webp") no-repeat;
     background-size: 520px;
     background-position-x: 50%;
@@ -111,17 +141,17 @@
     }
 
     &.second {
-      top: $hero-image-height-02 + $header-height;
+      top: $hero-image-height-02 + (2 * $header-height);
       background-size: 1400px;
     }
 
     &.third {
-      top: 2 * $hero-image-height-02 + $header-height;
+      top: 2 * $hero-image-height-02 + (2 * $header-height);
       background-size: 1200px;
     }
 
     &.fourth {
-      top: 3 * $hero-image-height-02 + $header-height;
+      top: 3 * $hero-image-height-02 + (2 * $header-height);
       background-size: 450px;
       background-position-y: -100%;
     }
@@ -139,19 +169,19 @@
     }
 
     &.second {
-      top: $hero-image-height-03 + $header-height;
+      top: $hero-image-height-03 + (2 * $header-height);
       background-size: 1300px;
       background-position-y: 100%;
     }
 
     &.third {
-      top: 2 * $hero-image-height-03 + $header-height;
+      top: 2 * $hero-image-height-03 + (2 * $header-height);
       background-size: 1000px;
       background-position-y: 0%;
     }
 
     &.fourth {
-      top: 3 * $hero-image-height-03 + $header-height;
+      top: 3 * $hero-image-height-03 + (2 * $header-height);
       background-size: 420px;
     }
   }
@@ -168,19 +198,19 @@
     }
 
     &.second {
-      top: $hero-image-height-04 + $header-height;
+      top: $hero-image-height-04 + (2 * $header-height);
       background-size: 1200px;
       background-position-y: -80%;
     }
 
     &.third {
-      top: 2 * $hero-image-height-04 + $header-height;
+      top: 2 * $hero-image-height-04 + (2 * $header-height);
       background-size: 800px;
       background-position-y: 30%;
     }
 
     &.fourth {
-      top: 3 * $hero-image-height-04 + $header-height;
+      top: 3 * $hero-image-height-04 + (2 * $header-height);
       background-size: 390px;
       background-position-y: -350%;
     }
@@ -198,19 +228,19 @@
     }
 
     &.second {
-      top: $hero-image-height-05 + $header-height;
+      top: $hero-image-height-05 + (2 * $header-height);
       background-size: 950px;
       background-position-y: -20%;
     }
 
     &.third {
-      top: 2 * $hero-image-height-05 + $header-height;
+      top: 2 * $hero-image-height-05 + (2 * $header-height);
       background-size: 800px;
       background-position-y: 20%;
     }
 
     &.fourth {
-      top: 3 * $hero-image-height-05 + $header-height;
+      top: 3 * $hero-image-height-05 + (2 * $header-height);
       background-size: 350px;
       background-position-y: -100%;
     }
@@ -228,19 +258,19 @@
     }
 
     &.second {
-      top: $hero-image-height-06 + $header-height;
+      top: $hero-image-height-06 + (2 * $header-height);
       background-size: 750px;
       background-position-y: 20%;
     }
 
     &.third {
-      top: 2 * $hero-image-height-06 + $header-height;
+      top: 2 * $hero-image-height-06 + (2 * $header-height);
       background-size: 650px;
       background-position-y: 20%;
     }
 
     &.fourth {
-      top: 3 * $hero-image-height-06 + $header-height;
+      top: 3 * $hero-image-height-06 + (2 * $header-height);
       background-size: 300px;
       background-position-y: -50%;
     }

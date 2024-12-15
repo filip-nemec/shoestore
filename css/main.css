@@ -18,6 +18,7 @@ header {
   align-items: center;
   justify-content: space-between;
   font-size: 0.75rem;
+  z-index: -2;
 }
 
 label.open-left-sidebar-button {
@@ -46,7 +47,7 @@ a {
   overflow: hidden;
 }
 .primary-menu a {
-  padding: 0.4rem 0.4rem;
+  padding: 0.5rem 0.4rem;
   margin-right: 0.4rem;
   border: 1px solid #ffffff;
   border-radius: 4px;
@@ -256,7 +257,7 @@ a {
   position: absolute;
   z-index: -10;
   left: 0;
-  top: 190.3rem;
+  top: 193.1rem;
   width: 100%;
   font-size: 0.75rem;
   background-color: #ffffff;
@@ -311,7 +312,7 @@ a {
     display: none;
   }
   .site-footer {
-    top: 177.8rem;
+    top: 180.6rem;
   }
   .footer-content-tablet-mobile {
     display: flex;
@@ -397,22 +398,54 @@ a {
 }
 @media only screen and (max-width: 51.5625em) {
   .site-footer {
-    top: 165.3rem;
+    top: 168.1rem;
   }
 }
 @media only screen and (max-width: 42.5em) {
   .site-footer {
-    top: 152.8rem;
+    top: 155.6rem;
   }
 }
 @media only screen and (max-width: 34.375em) {
   .site-footer {
-    top: 140.3rem;
+    top: 143.1rem;
   }
 }
 @media only screen and (max-width: 26.25em) {
   .site-footer {
-    top: 127.8rem;
+    top: 130.6rem;
+  }
+}
+.slider {
+  position: fixed;
+  top: 2.8rem;
+  height: 2.8rem;
+  width: 100%;
+  background-color: #ffffff;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.slider p {
+  white-space: nowrap;
+  padding: 0 4rem;
+  animation: scroll 12s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 .hero-image {
@@ -425,7 +458,7 @@ a {
   border-bottom: 1px solid #000000;
 }
 .hero-image.first {
-  top: 2.8rem;
+  top: 5.6rem;
   background: url("../images/hero-1.webp") no-repeat;
   background-size: 1500px;
   background-position-x: 50%;
@@ -433,7 +466,7 @@ a {
   background-color: #97abac;
 }
 .hero-image.second {
-  top: 49.675rem;
+  top: 52.475rem;
   background: url("../images/hero-2.webp") no-repeat;
   background-size: 1500px;
   background-position-x: 50%;
@@ -441,7 +474,7 @@ a {
   background-color: #000000;
 }
 .hero-image.third {
-  top: 96.55rem;
+  top: 99.35rem;
   background: url("../images/hero-3.avif") no-repeat;
   background-size: 1300px;
   background-position-x: 50%;
@@ -449,7 +482,7 @@ a {
   background-color: #f4f4f4;
 }
 .hero-image.fourth {
-  top: 143.425rem;
+  top: 146.225rem;
   background: url("../images/hero-4.webp") no-repeat;
   background-size: 520px;
   background-position-x: 50%;
@@ -519,15 +552,15 @@ a {
     background-size: 1400px;
   }
   .hero-image.second {
-    top: 46.55rem;
+    top: 49.35rem;
     background-size: 1400px;
   }
   .hero-image.third {
-    top: 90.3rem;
+    top: 93.1rem;
     background-size: 1200px;
   }
   .hero-image.fourth {
-    top: 134.05rem;
+    top: 136.85rem;
     background-size: 450px;
     background-position-y: -100%;
   }
@@ -540,17 +573,17 @@ a {
     background-size: 1300px;
   }
   .hero-image.second {
-    top: 43.425rem;
+    top: 46.225rem;
     background-size: 1300px;
     background-position-y: 100%;
   }
   .hero-image.third {
-    top: 84.05rem;
+    top: 86.85rem;
     background-size: 1000px;
     background-position-y: 0%;
   }
   .hero-image.fourth {
-    top: 124.675rem;
+    top: 127.475rem;
     background-size: 420px;
   }
 }
@@ -562,17 +595,17 @@ a {
     background-size: 1200px;
   }
   .hero-image.second {
-    top: 40.3rem;
+    top: 43.1rem;
     background-size: 1200px;
     background-position-y: -80%;
   }
   .hero-image.third {
-    top: 77.8rem;
+    top: 80.6rem;
     background-size: 800px;
     background-position-y: 30%;
   }
   .hero-image.fourth {
-    top: 115.3rem;
+    top: 118.1rem;
     background-size: 390px;
     background-position-y: -350%;
   }
@@ -585,17 +618,17 @@ a {
     background-size: 1100px;
   }
   .hero-image.second {
-    top: 37.175rem;
+    top: 39.975rem;
     background-size: 950px;
     background-position-y: -20%;
   }
   .hero-image.third {
-    top: 71.55rem;
+    top: 74.35rem;
     background-size: 800px;
     background-position-y: 20%;
   }
   .hero-image.fourth {
-    top: 105.925rem;
+    top: 108.725rem;
     background-size: 350px;
     background-position-y: -100%;
   }
@@ -608,17 +641,17 @@ a {
     background-size: 1000px;
   }
   .hero-image.second {
-    top: 34.05rem;
+    top: 36.85rem;
     background-size: 750px;
     background-position-y: 20%;
   }
   .hero-image.third {
-    top: 65.3rem;
+    top: 68.1rem;
     background-size: 650px;
     background-position-y: 20%;
   }
   .hero-image.fourth {
-    top: 96.55rem;
+    top: 99.35rem;
     background-size: 300px;
     background-position-y: -50%;
   }
