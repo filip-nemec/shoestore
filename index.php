@@ -24,7 +24,7 @@
           <p>Complimentary Shipping on All Products | 15% Off Everything When You Spend €150 +</p>
       </div>
 
-      <a href="index.html">
+      <a href="index.php">
         <div class="hero-image first">
           <div class="hero-content">
             <h1>Spring 2025</h1>
@@ -36,7 +36,7 @@
         </div>
       </a>
 
-      <a href="index.html">
+      <a href="index.php">
         <div class="hero-image second">
           <div class="hero-content">
             <h1 class="white-heading">Jewelry</h1>
@@ -47,7 +47,7 @@
         </div>
       </a>
 
-      <a href="index.html">
+      <a href="index.php">
         <div class="hero-image third">
           <div class="hero-content">
             <h1>Crush Chain Hobo Bag Quilted</h1>
@@ -58,7 +58,7 @@
         </div>
       </a>
 
-      <a href="index.html">
+      <a href="index.php">
         <div class="hero-image fourth">
           <div class="hero-content">
             <h1 class="white-heading">52<span class="small-text">nd</span> Collection</h1>
