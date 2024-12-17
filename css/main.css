@@ -437,7 +437,7 @@ a {
 .slider p {
   white-space: nowrap;
   padding: 0 4rem;
-  animation: scroll 12s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 @keyframes scroll {
@@ -509,7 +509,7 @@ a {
      -moz-user-select: none;
           user-select: none;
 }
-.hero-content a {
+.hero-content span.homepage-button {
   font-size: 0.75rem;
   line-height: 4rem;
   padding: 0.5rem 1.5rem;
@@ -521,7 +521,7 @@ a {
      -moz-user-select: none;
           user-select: none;
 }
-.hero-content a:hover {
+.hero-content span.homepage-button:hover {
   cursor: pointer;
   color: #ffffff;
   background-color: #000000;
@@ -533,10 +533,10 @@ a {
 .hero-content .white-heading {
   color: #ffffff;
 }
-.hero-content .white-button {
+.hero-content span.white-button {
   border-color: #ffffff;
 }
-.hero-content .white-button:hover {
+.hero-content span.white-button:hover {
   border: 1px solid #ffffff;
 }
 
